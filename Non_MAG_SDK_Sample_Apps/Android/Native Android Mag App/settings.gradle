@@ -1,0 +1,2 @@
+include ':app-a'
+rootProject.name='MagTraining'
