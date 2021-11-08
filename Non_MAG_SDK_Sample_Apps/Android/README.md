@@ -1,0 +1,1 @@
+This folder contains sample Android applications that use the Layer7 Mobile API Gateway (MAG) directly without the use of the MAG SDK. These are intended as examples for those who wish to leverage the MAG capabilities via the APIs provided but not use the SDK provided by Layer7.
