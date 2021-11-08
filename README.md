@@ -6,6 +6,7 @@ This repository contains sample Mobile applications that are designed to be used
 Name | SDK-based? | Brief Description
 -----| ---------- | -----------------
 [**Android Native App**](./Non_MAG_SDK_Sample_Apps/Android/Native%20Android%20Mag%20App) | No | This application provides an example of a native Android application that uses the Layer7 MAG APIs but does NOT use the MAG SDK
+[**iOS Native App**](./Non_MAG_SDK_Sample_Apps/iOS/MAG%20Native%20App) | No | This application provides an example of a native iOS application that uses the Layer7 MAG APIs but does NOT use the MAG SDK
 
 ## Using the Samples
 
