@@ -1,0 +1,645 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		981C822327204F7300A39296 /* keyChainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981C822227204F7300A39296 /* keyChainHelper.swift */; };
+		981C82262720A80600A39296 /* msso_config.json in Resources */ = {isa = PBXBuildFile; fileRef = 981C82252720A80500A39296 /* msso_config.json */; };
+		981C8228272184E800A39296 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981C8227272184E800A39296 /* loginViewController.swift */; };
+		98C1A3322735219F004572CC /* sessionPinningHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C1A3312735219F004572CC /* sessionPinningHandler.swift */; };
+		98D625D6271D7982006708DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D625D5271D7982006708DF /* AppDelegate.swift */; };
+		98D625D8271D7982006708DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D625D7271D7982006708DF /* SceneDelegate.swift */; };
+		98D625DA271D7982006708DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D625D9271D7982006708DF /* ViewController.swift */; };
+		98D625DD271D7982006708DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98D625DB271D7982006708DF /* Main.storyboard */; };
+		98D625DF271D7984006708DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98D625DE271D7984006708DF /* Assets.xcassets */; };
+		98D625E2271D7984006708DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98D625E0271D7984006708DF /* LaunchScreen.storyboard */; };
+		98D625ED271D7984006708DF /* MAG_Native_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D625EC271D7984006708DF /* MAG_Native_AppTests.swift */; };
+		98D625F7271D7984006708DF /* MAG_Native_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D625F6271D7984006708DF /* MAG_Native_AppUITests.swift */; };
+		98D625F9271D7984006708DF /* MAG_Native_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D625F8271D7984006708DF /* MAG_Native_AppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		98D625E9271D7984006708DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98D625CA271D7982006708DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98D625D1271D7982006708DF;
+			remoteInfo = "MAG Native App";
+		};
+		98D625F3271D7984006708DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98D625CA271D7982006708DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98D625D1271D7982006708DF;
+			remoteInfo = "MAG Native App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		981C822227204F7300A39296 /* keyChainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keyChainHelper.swift; sourceTree = "<group>"; };
+		981C82252720A80500A39296 /* msso_config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = msso_config.json; sourceTree = "<group>"; };
+		981C8227272184E800A39296 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = loginViewController.swift; path = "MAG Native App/loginViewController.swift"; sourceTree = "<group>"; };
+		98C1A3312735219F004572CC /* sessionPinningHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sessionPinningHandler.swift; sourceTree = "<group>"; };
+		98D625D2271D7982006708DF /* MAG Native App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MAG Native App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98D625D5271D7982006708DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		98D625D7271D7982006708DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		98D625D9271D7982006708DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		98D625DC271D7982006708DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		98D625DE271D7984006708DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		98D625E1271D7984006708DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		98D625E3271D7984006708DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98D625E8271D7984006708DF /* MAG Native AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MAG Native AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98D625EC271D7984006708DF /* MAG_Native_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAG_Native_AppTests.swift; sourceTree = "<group>"; };
+		98D625F2271D7984006708DF /* MAG Native AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MAG Native AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98D625F6271D7984006708DF /* MAG_Native_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAG_Native_AppUITests.swift; sourceTree = "<group>"; };
+		98D625F8271D7984006708DF /* MAG_Native_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAG_Native_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		98D625CF271D7982006708DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98D625E5271D7984006708DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98D625EF271D7984006708DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		98D625C9271D7982006708DF = {
+			isa = PBXGroup;
+			children = (
+				981C8227272184E800A39296 /* loginViewController.swift */,
+				981C82252720A80500A39296 /* msso_config.json */,
+				98D625D4271D7982006708DF /* MAG Native App */,
+				98D625EB271D7984006708DF /* MAG Native AppTests */,
+				98D625F5271D7984006708DF /* MAG Native AppUITests */,
+				98D625D3271D7982006708DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		98D625D3271D7982006708DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				98D625D2271D7982006708DF /* MAG Native App.app */,
+				98D625E8271D7984006708DF /* MAG Native AppTests.xctest */,
+				98D625F2271D7984006708DF /* MAG Native AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		98D625D4271D7982006708DF /* MAG Native App */ = {
+			isa = PBXGroup;
+			children = (
+				98D625D5271D7982006708DF /* AppDelegate.swift */,
+				98D625D7271D7982006708DF /* SceneDelegate.swift */,
+				98D625D9271D7982006708DF /* ViewController.swift */,
+				98D625DB271D7982006708DF /* Main.storyboard */,
+				98D625DE271D7984006708DF /* Assets.xcassets */,
+				98D625E0271D7984006708DF /* LaunchScreen.storyboard */,
+				98D625E3271D7984006708DF /* Info.plist */,
+				981C822227204F7300A39296 /* keyChainHelper.swift */,
+				98C1A3312735219F004572CC /* sessionPinningHandler.swift */,
+			);
+			path = "MAG Native App";
+			sourceTree = "<group>";
+		};
+		98D625EB271D7984006708DF /* MAG Native AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				98D625EC271D7984006708DF /* MAG_Native_AppTests.swift */,
+			);
+			path = "MAG Native AppTests";
+			sourceTree = "<group>";
+		};
+		98D625F5271D7984006708DF /* MAG Native AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				98D625F6271D7984006708DF /* MAG_Native_AppUITests.swift */,
+				98D625F8271D7984006708DF /* MAG_Native_AppUITestsLaunchTests.swift */,
+			);
+			path = "MAG Native AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		98D625D1271D7982006708DF /* MAG Native App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98D625FC271D7984006708DF /* Build configuration list for PBXNativeTarget "MAG Native App" */;
+			buildPhases = (
+				98D625CE271D7982006708DF /* Sources */,
+				98D625CF271D7982006708DF /* Frameworks */,
+				98D625D0271D7982006708DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MAG Native App";
+			productName = "MAG Native App";
+			productReference = 98D625D2271D7982006708DF /* MAG Native App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		98D625E7271D7984006708DF /* MAG Native AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98D625FF271D7984006708DF /* Build configuration list for PBXNativeTarget "MAG Native AppTests" */;
+			buildPhases = (
+				98D625E4271D7984006708DF /* Sources */,
+				98D625E5271D7984006708DF /* Frameworks */,
+				98D625E6271D7984006708DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98D625EA271D7984006708DF /* PBXTargetDependency */,
+			);
+			name = "MAG Native AppTests";
+			productName = "MAG Native AppTests";
+			productReference = 98D625E8271D7984006708DF /* MAG Native AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		98D625F1271D7984006708DF /* MAG Native AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98D62602271D7984006708DF /* Build configuration list for PBXNativeTarget "MAG Native AppUITests" */;
+			buildPhases = (
+				98D625EE271D7984006708DF /* Sources */,
+				98D625EF271D7984006708DF /* Frameworks */,
+				98D625F0271D7984006708DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98D625F4271D7984006708DF /* PBXTargetDependency */,
+			);
+			name = "MAG Native AppUITests";
+			productName = "MAG Native AppUITests";
+			productReference = 98D625F2271D7984006708DF /* MAG Native AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98D625CA271D7982006708DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					98D625D1271D7982006708DF = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					98D625E7271D7984006708DF = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 98D625D1271D7982006708DF;
+					};
+					98D625F1271D7984006708DF = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 98D625D1271D7982006708DF;
+					};
+				};
+			};
+			buildConfigurationList = 98D625CD271D7982006708DF /* Build configuration list for PBXProject "MAG Native App" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 98D625C9271D7982006708DF;
+			productRefGroup = 98D625D3271D7982006708DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				98D625D1271D7982006708DF /* MAG Native App */,
+				98D625E7271D7984006708DF /* MAG Native AppTests */,
+				98D625F1271D7984006708DF /* MAG Native AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		98D625D0271D7982006708DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98D625E2271D7984006708DF /* LaunchScreen.storyboard in Resources */,
+				98D625DF271D7984006708DF /* Assets.xcassets in Resources */,
+				98D625DD271D7982006708DF /* Main.storyboard in Resources */,
+				981C82262720A80600A39296 /* msso_config.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98D625E6271D7984006708DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98D625F0271D7984006708DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		98D625CE271D7982006708DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98D625DA271D7982006708DF /* ViewController.swift in Sources */,
+				98D625D6271D7982006708DF /* AppDelegate.swift in Sources */,
+				98D625D8271D7982006708DF /* SceneDelegate.swift in Sources */,
+				981C822327204F7300A39296 /* keyChainHelper.swift in Sources */,
+				981C8228272184E800A39296 /* loginViewController.swift in Sources */,
+				98C1A3322735219F004572CC /* sessionPinningHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98D625E4271D7984006708DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98D625ED271D7984006708DF /* MAG_Native_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98D625EE271D7984006708DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98D625F7271D7984006708DF /* MAG_Native_AppUITests.swift in Sources */,
+				98D625F9271D7984006708DF /* MAG_Native_AppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		98D625EA271D7984006708DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98D625D1271D7982006708DF /* MAG Native App */;
+			targetProxy = 98D625E9271D7984006708DF /* PBXContainerItemProxy */;
+		};
+		98D625F4271D7984006708DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98D625D1271D7982006708DF /* MAG Native App */;
+			targetProxy = 98D625F3271D7984006708DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		98D625DB271D7982006708DF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98D625DC271D7982006708DF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		98D625E0271D7984006708DF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98D625E1271D7984006708DF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		98D625FA271D7984006708DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		98D625FB271D7984006708DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		98D625FD271D7984006708DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TN7SF8E85Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MAG Native App/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brcm.mag.native.MAG-Native-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		98D625FE271D7984006708DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TN7SF8E85Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MAG Native App/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brcm.mag.native.MAG-Native-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		98D62600271D7984006708DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TN7SF8E85Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brcm.mag.native.MAG-Native-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MAG Native App.app/MAG Native App";
+			};
+			name = Debug;
+		};
+		98D62601271D7984006708DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TN7SF8E85Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brcm.mag.native.MAG-Native-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MAG Native App.app/MAG Native App";
+			};
+			name = Release;
+		};
+		98D62603271D7984006708DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TN7SF8E85Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brcm.mag.native.MAG-Native-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "MAG Native App";
+			};
+			name = Debug;
+		};
+		98D62604271D7984006708DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TN7SF8E85Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brcm.mag.native.MAG-Native-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "MAG Native App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		98D625CD271D7982006708DF /* Build configuration list for PBXProject "MAG Native App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98D625FA271D7984006708DF /* Debug */,
+				98D625FB271D7984006708DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98D625FC271D7984006708DF /* Build configuration list for PBXNativeTarget "MAG Native App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98D625FD271D7984006708DF /* Debug */,
+				98D625FE271D7984006708DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98D625FF271D7984006708DF /* Build configuration list for PBXNativeTarget "MAG Native AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98D62600271D7984006708DF /* Debug */,
+				98D62601271D7984006708DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98D62602271D7984006708DF /* Build configuration list for PBXNativeTarget "MAG Native AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98D62603271D7984006708DF /* Debug */,
+				98D62604271D7984006708DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 98D625CA271D7982006708DF /* Project object */;
+}
