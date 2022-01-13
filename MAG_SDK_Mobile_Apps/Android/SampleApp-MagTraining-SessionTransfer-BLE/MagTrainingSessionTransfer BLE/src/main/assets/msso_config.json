@@ -1,0 +1,268 @@
+{
+  "server": {
+    "hostname": "mag-gw10-oracle-0.lvn.broadcom.net",
+    "port": 8443,
+    "prefix": "",
+    "server_certs": [
+      [
+        "-----BEGIN CERTIFICATE-----",
+        "MIIEJTCCAw2gAwIBAgIJAI5K3UEKnsSlMA0GCSqGSIb3DQEBCwUAMGIxCzAJBgNVBAYTAklOMQsw",
+        "CQYDVQQIDAJLQTEMMAoGA1UEBwwDQkFOMQswCQYDVQQKDAJDQTErMCkGA1UEAwwibWFnLWd3MTAt",
+        "b3JhY2xlLTAubHZuLmJyb2FkY29tLm5ldDAeFw0yMDEwMDcxNTE5MjhaFw0yMTEwMDcxNTE5Mjha",
+        "MGIxCzAJBgNVBAYTAklOMQswCQYDVQQIDAJLQTEMMAoGA1UEBwwDQkFOMQswCQYDVQQKDAJDQTEr",
+        "MCkGA1UEAwwibWFnLWd3MTAtb3JhY2xlLTAubHZuLmJyb2FkY29tLm5ldDCCASIwDQYJKoZIhvcN",
+        "AQEBBQADggEPADCCAQoCggEBALgIy/iSCIgjc7YF1Hj6mVc62+liRE9aZB7haRsTjxIUSzfU2WP+",
+        "AyB+LMRVw1iOlrQQy2XYeJSqe/fIKmhufRXaKMQ/IObzoHvICIImN7JiAm1kG4usGGV10eiBmSOc",
+        "4WkR/NQcd62IfjjV/OBVMvtRbsppN/ZEFlrRsn6D8rXcpbFP0YwQdXEVEL3e3t5lgYXtLQpVxsum",
+        "35Uue27sSQVQ0994jZtPDYlRXizzBYC3uilGzrmQZGFLFyYWFcT3BaI7DcuhV+wmS/kLNXiZ09Tc",
+        "oWFwdxdVE3AJ/iw90xE4iFDK3Ina3OVvj3QjuFS6EMHieW/1TjOQWsZFJSgPRrcCAwEAAaOB3TCB",
+        "2jB8BgNVHSMEdTBzoWakZDBiMQswCQYDVQQGEwJJTjELMAkGA1UECAwCS0ExDDAKBgNVBAcMA0JB",
+        "TjELMAkGA1UECgwCQ0ExKzApBgNVBAMMIm1hZy1ndzEwLW9yYWNsZS0wLmx2bi5icm9hZGNvbS5u",
+        "ZXSCCQCOSt1BCp7EpTAJBgNVHRMEAjAAMAsGA1UdDwQEAwIE8DATBgNVHSUEDDAKBggrBgEFBQcD",
+        "ATAtBgNVHREEJjAkgiJtYWctZ3cxMC1vcmFjbGUtMC5sdm4uYnJvYWRjb20ubmV0MA0GCSqGSIb3",
+        "DQEBCwUAA4IBAQCbfZsmaVCbRm4AGuTECJTgKrhwDe7g1wqyle7YxHh6HawnxdvVLE/O0gLCRIGy",
+        "thkRol9qZgiI97bMAurCGMNapgru19XIxUccJeiTG+3mYWCDObulwvj9P8XcvXImLbH/zOq3hguV",
+        "rPoFu6BQHyKD4R7U45Fadva7XjFJJT4UiNVhYegAkG/TYSkeZFodorThr43QqxNj2KK01yqUQxu3",
+        "Wn23yvWpxYRr5T4x5s7YRV2IEWh1Vt6cbws2OtDGbopvNEHQkboP6K7GcpXbsfgEfUjAvZhy4yWd",
+        "XvN2Y9F5CnxoZc1ywfbykgM//OU73DZjBCOQcl7Oa8Fnn/rwMftz",
+        "-----END CERTIFICATE-----"
+      ]
+    ]
+  },
+  "oauth": {
+    "client": {
+      "organization": "Test",
+      "description": "What is the app used for?",
+      "client_name": "Abhishek",
+      "client_type": "confidential",
+      "registered_by": "admin",
+      "client_custom": {},
+      "client_ids": [
+        {
+          "client_id": "9845fbf5-8ffa-43d6-a4dc-be8d77835d66",
+          "client_secret": "",
+          "scope": "openid msso phone profile address email msso_register",
+          "redirect_uri": "https://ios.ssosdk.ca.com/ios",
+          "environment": "IOS",
+          "status": "ENABLED",
+          "registered_by": "admin",
+          "service_ids": "",
+          "account_plan_mapping_ids": "",
+          "client_key_custom": {
+            "openid_registration": {
+              "request": {},
+              "oauth_client": true,
+              "response": {
+                "client_id": "9845fbf5-8ffa-43d6-a4dc-be8d77835d66",
+                "client_secret": "9845fbf5-8ffa-43d6-a4dc-be8d77835d66",
+                "client_secret_expires_at": "0",
+                "client_id_issued_at": 1602087412,
+                "registration_access_token": "",
+                "registration_client_uri": "",
+                "token_endpoint_auth_method": "client_secret_basic",
+                "token_endpoint_auth_signing_alg": "",
+                "application_type": "",
+                "redirect_uris": [
+                  "https://ios.ssosdk.ca.com/ios"
+                ],
+                "client_name": "Abhishek",
+                "subject_type": "pairwise",
+                "sector_identifier_uri": "",
+                "contacts": [],
+                "response_types": [],
+                "grant_types": [],
+                "id_token_signed_response_alg": "HS256",
+                "userinfo_signed_response_alg": "",
+                "environment": "IOS",
+                "organization": "Test",
+                "master": true,
+                "description": "What is the app used for?",
+                "scope": "openid msso phone profile address email msso_register",
+                "jwks": "",
+                "jwks_uri": ""
+              }
+            }
+          }
+        }
+      ]
+    },
+    "system_endpoints": {
+      "authorization_endpoint_path": "/auth/oauth/v2/authorize",
+      "token_endpoint_path": "/auth/oauth/v2/token",
+      "token_revocation_endpoint_path": "/auth/oauth/v2/token/revoke",
+      "usersession_logout_endpoint_path": "/connect/session/logout",
+      "usersession_status_endpoint_path": "/connect/session/status"
+    },
+    "oauth_protected_endpoints": {
+      "userinfo_endpoint_path": "/openid/connect/v1/userinfo"
+    }
+  },
+  "mag": {
+    "system_endpoints": {
+      "device_register_endpoint_path": "/connect/device/register",
+      "device_renew_endpoint_path": "/connect/device/renew",
+      "device_client_register_endpoint_path": "/connect/device/register/client",
+      "device_remove_endpoint_path": "/connect/device/remove",
+      "client_credential_init_endpoint_path": "/connect/client/initialize",
+      "authenticate_otp_endpoint_path": "/auth/generateOTP"
+    },
+    "oauth_protected_endpoints": {
+      "enterprise_browser_endpoint_path": "/connect/enterprise/browser",
+      "device_list_endpoint_path": "/connect/device/list",
+      "device_metadata_endpoint_path": "/connect/device/metadata"
+    },
+    "mobile_sdk": {
+      "sso_enabled": true,
+      "location_enabled": true,
+      "location_provider": "network",
+      "msisdn_enabled": true,
+      "enable_public_key_pinning": false,
+      "trusted_public_pki": false,
+      "trusted_cert_pinned_public_key_hashes": [],
+      "client_cert_rsa_keybits": 1024
+    },
+    "ble": {
+      "msso_ble_service_uuid": "980c2f36-bde3-11e4-8dfc-aa07a5b093db",
+      "msso_ble_characteristic_uuid": "980c34cc-bde3-11e4-8dfc-aa07a5b093db",
+      "msso_ble_rssi": -80
+    }
+  },
+  "custom": {
+    "oauth_demo_protected_api_endpoint_path": "/oauth/v2/protectedapi/foo",
+    "mag_demo_products_endpoint_path": "/protected/resource/products"
+  }
+}
+{
+  "server": {
+    "hostname": "mag-gw10-oracle-0.lvn.broadcom.net",
+    "port": 8443,
+    "prefix": "",
+    "server_certs": [
+      [
+        "-----BEGIN CERTIFICATE-----",
+        "MIIEJTCCAw2gAwIBAgIJAI5K3UEKnsSlMA0GCSqGSIb3DQEBCwUAMGIxCzAJBgNVBAYTAklOMQsw",
+        "CQYDVQQIDAJLQTEMMAoGA1UEBwwDQkFOMQswCQYDVQQKDAJDQTErMCkGA1UEAwwibWFnLWd3MTAt",
+        "b3JhY2xlLTAubHZuLmJyb2FkY29tLm5ldDAeFw0yMDEwMDcxNTE5MjhaFw0yMTEwMDcxNTE5Mjha",
+        "MGIxCzAJBgNVBAYTAklOMQswCQYDVQQIDAJLQTEMMAoGA1UEBwwDQkFOMQswCQYDVQQKDAJDQTEr",
+        "MCkGA1UEAwwibWFnLWd3MTAtb3JhY2xlLTAubHZuLmJyb2FkY29tLm5ldDCCASIwDQYJKoZIhvcN",
+        "AQEBBQADggEPADCCAQoCggEBALgIy/iSCIgjc7YF1Hj6mVc62+liRE9aZB7haRsTjxIUSzfU2WP+",
+        "AyB+LMRVw1iOlrQQy2XYeJSqe/fIKmhufRXaKMQ/IObzoHvICIImN7JiAm1kG4usGGV10eiBmSOc",
+        "4WkR/NQcd62IfjjV/OBVMvtRbsppN/ZEFlrRsn6D8rXcpbFP0YwQdXEVEL3e3t5lgYXtLQpVxsum",
+        "35Uue27sSQVQ0994jZtPDYlRXizzBYC3uilGzrmQZGFLFyYWFcT3BaI7DcuhV+wmS/kLNXiZ09Tc",
+        "oWFwdxdVE3AJ/iw90xE4iFDK3Ina3OVvj3QjuFS6EMHieW/1TjOQWsZFJSgPRrcCAwEAAaOB3TCB",
+        "2jB8BgNVHSMEdTBzoWakZDBiMQswCQYDVQQGEwJJTjELMAkGA1UECAwCS0ExDDAKBgNVBAcMA0JB",
+        "TjELMAkGA1UECgwCQ0ExKzApBgNVBAMMIm1hZy1ndzEwLW9yYWNsZS0wLmx2bi5icm9hZGNvbS5u",
+        "ZXSCCQCOSt1BCp7EpTAJBgNVHRMEAjAAMAsGA1UdDwQEAwIE8DATBgNVHSUEDDAKBggrBgEFBQcD",
+        "ATAtBgNVHREEJjAkgiJtYWctZ3cxMC1vcmFjbGUtMC5sdm4uYnJvYWRjb20ubmV0MA0GCSqGSIb3",
+        "DQEBCwUAA4IBAQCbfZsmaVCbRm4AGuTECJTgKrhwDe7g1wqyle7YxHh6HawnxdvVLE/O0gLCRIGy",
+        "thkRol9qZgiI97bMAurCGMNapgru19XIxUccJeiTG+3mYWCDObulwvj9P8XcvXImLbH/zOq3hguV",
+        "rPoFu6BQHyKD4R7U45Fadva7XjFJJT4UiNVhYegAkG/TYSkeZFodorThr43QqxNj2KK01yqUQxu3",
+        "Wn23yvWpxYRr5T4x5s7YRV2IEWh1Vt6cbws2OtDGbopvNEHQkboP6K7GcpXbsfgEfUjAvZhy4yWd",
+        "XvN2Y9F5CnxoZc1ywfbykgM//OU73DZjBCOQcl7Oa8Fnn/rwMftz",
+        "-----END CERTIFICATE-----"
+      ]
+    ]
+  },
+  "oauth": {
+    "client": {
+      "organization": "Test",
+      "description": "What is the app used for?",
+      "client_name": "Abhishek",
+      "client_type": "confidential",
+      "registered_by": "admin",
+      "client_custom": {},
+      "client_ids": [
+        {
+          "client_id": "9845fbf5-8ffa-43d6-a4dc-be8d77835d66",
+          "client_secret": "",
+          "scope": "openid msso phone profile address email msso_register",
+          "redirect_uri": "https://ios.ssosdk.ca.com/ios",
+          "environment": "IOS",
+          "status": "ENABLED",
+          "registered_by": "admin",
+          "service_ids": "",
+          "account_plan_mapping_ids": "",
+          "client_key_custom": {
+            "openid_registration": {
+              "request": {},
+              "oauth_client": true,
+              "response": {
+                "client_id": "9845fbf5-8ffa-43d6-a4dc-be8d77835d66",
+                "client_secret": "9845fbf5-8ffa-43d6-a4dc-be8d77835d66",
+                "client_secret_expires_at": "0",
+                "client_id_issued_at": 1602087412,
+                "registration_access_token": "",
+                "registration_client_uri": "",
+                "token_endpoint_auth_method": "client_secret_basic",
+                "token_endpoint_auth_signing_alg": "",
+                "application_type": "",
+                "redirect_uris": [
+                  "https://ios.ssosdk.ca.com/ios"
+                ],
+                "client_name": "Abhishek",
+                "subject_type": "pairwise",
+                "sector_identifier_uri": "",
+                "contacts": [],
+                "response_types": [],
+                "grant_types": [],
+                "id_token_signed_response_alg": "HS256",
+                "userinfo_signed_response_alg": "",
+                "environment": "IOS",
+                "organization": "Test",
+                "master": true,
+                "description": "What is the app used for?",
+                "scope": "openid msso phone profile address email msso_register",
+                "jwks": "",
+                "jwks_uri": ""
+              }
+            }
+          }
+        }
+      ]
+    },
+    "system_endpoints": {
+      "authorization_endpoint_path": "/auth/oauth/v2/authorize",
+      "token_endpoint_path": "/auth/oauth/v2/token",
+      "token_revocation_endpoint_path": "/auth/oauth/v2/token/revoke",
+      "usersession_logout_endpoint_path": "/connect/session/logout",
+      "usersession_status_endpoint_path": "/connect/session/status"
+    },
+    "oauth_protected_endpoints": {
+      "userinfo_endpoint_path": "/openid/connect/v1/userinfo"
+    }
+  },
+  "mag": {
+    "system_endpoints": {
+      "device_register_endpoint_path": "/connect/device/register",
+      "device_renew_endpoint_path": "/connect/device/renew",
+      "device_client_register_endpoint_path": "/connect/device/register/client",
+      "device_remove_endpoint_path": "/connect/device/remove",
+      "client_credential_init_endpoint_path": "/connect/client/initialize",
+      "authenticate_otp_endpoint_path": "/auth/generateOTP"
+    },
+    "oauth_protected_endpoints": {
+      "enterprise_browser_endpoint_path": "/connect/enterprise/browser",
+      "device_list_endpoint_path": "/connect/device/list",
+      "device_metadata_endpoint_path": "/connect/device/metadata"
+    },
+    "mobile_sdk": {
+      "sso_enabled": true,
+      "location_enabled": true,
+      "location_provider": "network",
+      "msisdn_enabled": true,
+      "enable_public_key_pinning": false,
+      "trusted_public_pki": false,
+      "trusted_cert_pinned_public_key_hashes": [],
+      "client_cert_rsa_keybits": 1024
+    },
+    "ble": {
+      "msso_ble_service_uuid": "980c2f36-bde3-11e4-8dfc-aa07a5b093db",
+      "msso_ble_characteristic_uuid": "980c34cc-bde3-11e4-8dfc-aa07a5b093db",
+      "msso_ble_rssi": -80
+    }
+  },
+  "custom": {
+    "oauth_demo_protected_api_endpoint_path": "/oauth/v2/protectedapi/foo",
+    "mag_demo_products_endpoint_path": "/protected/resource/products"
+  }
+}

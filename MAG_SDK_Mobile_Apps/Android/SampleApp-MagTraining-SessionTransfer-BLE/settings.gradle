@@ -1,0 +1,2 @@
+include ':MagTrainingSessionTransfer BLE'
+rootProject.name='MagTraining'
