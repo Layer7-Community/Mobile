@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MagTraining-UnProtectedLogin.iml" filepath="$PROJECT_DIR$/.idea/modules/MagTraining-UnProtectedLogin.iml" group="MagTraining-UnProtectedLogin" />
+      <module fileurl="file://$PROJECT_DIR$/MagTrainingUnProtectedLogin/MagTrainingUnProtectedLogin.iml" filepath="$PROJECT_DIR$/MagTrainingUnProtectedLogin/MagTrainingUnProtectedLogin.iml" group="MagTraining-UnProtectedLogin/MagTrainingUnProtectedLogin" />
+    </modules>
+  </component>
+</project>

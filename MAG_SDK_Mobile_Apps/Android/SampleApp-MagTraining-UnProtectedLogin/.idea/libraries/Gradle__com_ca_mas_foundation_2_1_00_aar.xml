@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: com.ca:mas-foundation:2.1.00@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/95d8f5298fd7d423cab089f53e895c45/mas-foundation-2.1.00/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/95d8f5298fd7d423cab089f53e895c45/mas-foundation-2.1.00/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/95d8f5298fd7d423cab089f53e895c45/mas-foundation-2.1.00/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ca/mas-foundation/2.1.00/cbb646c115c9e5a2ac72f3f864a970a9890b5491/mas-foundation-2.1.00-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ca/mas-foundation/2.1.00/3ab1fa03b3de10f274c9aebb8ff3c6b111d5a6e2/mas-foundation-2.1.00-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
