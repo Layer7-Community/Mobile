@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.ca.mas.ui:masui-release:@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bf97bafce4b3ca3b74108692368c7344/jetified-masui-release/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bf97bafce4b3ca3b74108692368c7344/jetified-masui-release/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
