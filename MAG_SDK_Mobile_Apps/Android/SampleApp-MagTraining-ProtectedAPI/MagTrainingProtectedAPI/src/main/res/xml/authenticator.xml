@@ -1,0 +1,5 @@
+<account-authenticator xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accountType="com.mas.foundation.sharedstorage"
+    android:label="Broadcom"
+    android:icon="@drawable/logo_ca"
+    android:smallIcon="@drawable/logo_ca"/>
