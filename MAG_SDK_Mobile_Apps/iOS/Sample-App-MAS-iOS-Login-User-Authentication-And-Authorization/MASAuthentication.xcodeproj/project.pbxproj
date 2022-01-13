@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		48DD944C1FE9C4A300237624 /* msso_config.json in Resources */ = {isa = PBXBuildFile; fileRef = 48DD944B1FE9C4A200237624 /* msso_config.json */; };
+		4F610C618D73946F1DC892B7 /* libPods-MASAuthentication.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D12DDBA009D4FA9340D33A7A /* libPods-MASAuthentication.a */; };
+		CB4321D81D6615D600FFCF20 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4321D71D6615D600FFCF20 /* main.m */; };
+		CB4321DB1D6615D700FFCF20 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4321DA1D6615D700FFCF20 /* AppDelegate.m */; };
+		CB4321DF1D6615D700FFCF20 /* MASMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4321DE1D6615D700FFCF20 /* MASMainViewController.m */; };
+		CB4321E21D6615D700FFCF20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB4321E11D6615D700FFCF20 /* Assets.xcassets */; };
+		CB4321E51D6615D700FFCF20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB4321E31D6615D700FFCF20 /* LaunchScreen.storyboard */; };
+		CB4321E81D6615D700FFCF20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB4321E61D6615D700FFCF20 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CB4322061D661C5B00FFCF20 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		48DD944B1FE9C4A200237624 /* msso_config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = msso_config.json; sourceTree = "<group>"; };
+		72D80CE5C5CFDD38DE42783D /* Pods-MASAuthentication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MASAuthentication.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MASAuthentication/Pods-MASAuthentication.debug.xcconfig"; sourceTree = "<group>"; };
+		C714B932830ADD252D4DD1EF /* Pods-MASAuthentication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MASAuthentication.release.xcconfig"; path = "Pods/Target Support Files/Pods-MASAuthentication/Pods-MASAuthentication.release.xcconfig"; sourceTree = "<group>"; };
+		CB4321D31D6615D600FFCF20 /* MASAuthentication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MASAuthentication.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB4321D71D6615D600FFCF20 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CB4321D91D6615D700FFCF20 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CB4321DA1D6615D700FFCF20 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CB4321DD1D6615D700FFCF20 /* MASMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MASMainViewController.h; path = Classes/MASMainViewController.h; sourceTree = "<group>"; };
+		CB4321DE1D6615D700FFCF20 /* MASMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MASMainViewController.m; path = Classes/MASMainViewController.m; sourceTree = "<group>"; };
+		CB4321E11D6615D700FFCF20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB4321E41D6615D700FFCF20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CB4321E71D6615D700FFCF20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB4321E91D6615D700FFCF20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB4321EF1D6615E200FFCF20 /* MASAuthentication.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = MASAuthentication.entitlements; sourceTree = "<group>"; };
+		D12DDBA009D4FA9340D33A7A /* libPods-MASAuthentication.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MASAuthentication.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB4321D01D6615D600FFCF20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F610C618D73946F1DC892B7 /* libPods-MASAuthentication.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		98DF401B9EFFBA00D198BF24 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				72D80CE5C5CFDD38DE42783D /* Pods-MASAuthentication.debug.xcconfig */,
+				C714B932830ADD252D4DD1EF /* Pods-MASAuthentication.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A8DCA9E8AC54BB5F905E5B22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D12DDBA009D4FA9340D33A7A /* libPods-MASAuthentication.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB4321CA1D6615D600FFCF20 = {
+			isa = PBXGroup;
+			children = (
+				48DD944B1FE9C4A200237624 /* msso_config.json */,
+				CB4321D51D6615D600FFCF20 /* MASAuthentication */,
+				CB4321D41D6615D600FFCF20 /* Products */,
+				98DF401B9EFFBA00D198BF24 /* Pods */,
+				A8DCA9E8AC54BB5F905E5B22 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CB4321D41D6615D600FFCF20 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB4321D31D6615D600FFCF20 /* MASAuthentication.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB4321D51D6615D600FFCF20 /* MASAuthentication */ = {
+			isa = PBXGroup;
+			children = (
+				CB4321EF1D6615E200FFCF20 /* MASAuthentication.entitlements */,
+				CB4321D91D6615D700FFCF20 /* AppDelegate.h */,
+				CB4321DA1D6615D700FFCF20 /* AppDelegate.m */,
+				CB4321DC1D6615D700FFCF20 /* Classes */,
+				CB4321E01D6615D700FFCF20 /* Resources */,
+				CB4321D61D6615D600FFCF20 /* Supporting Files */,
+			);
+			path = MASAuthentication;
+			sourceTree = "<group>";
+		};
+		CB4321D61D6615D600FFCF20 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB4321D71D6615D600FFCF20 /* main.m */,
+				CB4321E91D6615D700FFCF20 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB4321DC1D6615D700FFCF20 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CB4321DD1D6615D700FFCF20 /* MASMainViewController.h */,
+				CB4321DE1D6615D700FFCF20 /* MASMainViewController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		CB4321E01D6615D700FFCF20 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CB4321E11D6615D700FFCF20 /* Assets.xcassets */,
+				CB4321E31D6615D700FFCF20 /* LaunchScreen.storyboard */,
+				CB4321E61D6615D700FFCF20 /* Main.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB4321D21D6615D600FFCF20 /* MASAuthentication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB4321EC1D6615D700FFCF20 /* Build configuration list for PBXNativeTarget "MASAuthentication" */;
+			buildPhases = (
+				2EB502B484BEF6000450B994 /* [CP] Check Pods Manifest.lock */,
+				CB4321CF1D6615D600FFCF20 /* Sources */,
+				CB4321D01D6615D600FFCF20 /* Frameworks */,
+				CB4321D11D6615D600FFCF20 /* Resources */,
+				CB4322061D661C5B00FFCF20 /* Embed Frameworks */,
+				38FC911E9E4246261F88B306 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MASAuthentication;
+			productName = MASAuthentication;
+			productReference = CB4321D31D6615D600FFCF20 /* MASAuthentication.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB4321CB1D6615D600FFCF20 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "CA Technologies";
+				TargetAttributes = {
+					CB4321D21D6615D600FFCF20 = {
+						CreatedOnToolsVersion = 7.3.1;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = CB4321CE1D6615D600FFCF20 /* Build configuration list for PBXProject "MASAuthentication" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB4321CA1D6615D600FFCF20;
+			productRefGroup = CB4321D41D6615D600FFCF20 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB4321D21D6615D600FFCF20 /* MASAuthentication */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB4321D11D6615D600FFCF20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB4321E81D6615D700FFCF20 /* Main.storyboard in Resources */,
+				CB4321E21D6615D700FFCF20 /* Assets.xcassets in Resources */,
+				CB4321E51D6615D700FFCF20 /* LaunchScreen.storyboard in Resources */,
+				48DD944C1FE9C4A300237624 /* msso_config.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2EB502B484BEF6000450B994 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MASAuthentication-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		38FC911E9E4246261F88B306 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MASAuthentication/Pods-MASAuthentication-frameworks.sh",
+				"${PODS_ROOT}/MASFoundation/MASFoundation.framework",
+				"${PODS_ROOT}/MASUI/MASUI.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MASFoundation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MASUI.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MASAuthentication/Pods-MASAuthentication-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB4321CF1D6615D600FFCF20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB4321DF1D6615D700FFCF20 /* MASMainViewController.m in Sources */,
+				CB4321DB1D6615D700FFCF20 /* AppDelegate.m in Sources */,
+				CB4321D81D6615D600FFCF20 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CB4321E31D6615D700FFCF20 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB4321E41D6615D700FFCF20 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CB4321E61D6615D700FFCF20 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB4321E71D6615D700FFCF20 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB4321EA1D6615D700FFCF20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "ObjectiveC-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		CB4321EB1D6615D700FFCF20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "ObjectiveC-Bridging-Header.h";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB4321ED1D6615D700FFCF20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72D80CE5C5CFDD38DE42783D /* Pods-MASAuthentication.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MASAuthentication/MASAuthentication.entitlements;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = MASAuthentication/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ca.MASAuthentication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CB4321EE1D6615D700FFCF20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C714B932830ADD252D4DD1EF /* Pods-MASAuthentication.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MASAuthentication/MASAuthentication.entitlements;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = MASAuthentication/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ca.MASAuthentication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB4321CE1D6615D600FFCF20 /* Build configuration list for PBXProject "MASAuthentication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB4321EA1D6615D700FFCF20 /* Debug */,
+				CB4321EB1D6615D700FFCF20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB4321EC1D6615D700FFCF20 /* Build configuration list for PBXNativeTarget "MASAuthentication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB4321ED1D6615D700FFCF20 /* Debug */,
+				CB4321EE1D6615D700FFCF20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB4321CB1D6615D600FFCF20 /* Project object */;
+}

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="dl0-ky-aLA">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="JJ5-uO-m1E">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="dl0-ky-aLA" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WOh-AV-bLt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="FeI-g5-ecc" kind="relationship" relationship="rootViewController" id="hEE-Hg-yYf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S1p-d5-FOe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-636" y="1309"/>
+        </scene>
+        <!--MASMainViewController-->
+        <scene sceneID="4XW-BJ-l2O">
+            <objects>
+                <viewController id="FeI-g5-ecc" userLabel="MASMainViewController" customClass="MASMainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2c1-95-Xrx"/>
+                        <viewControllerLayoutGuide type="bottom" id="ibK-po-CT8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0mK-Y5-JGg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="8BP-9S-SUr" userLabel="BackgroundImageView"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;Mobile App Services&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="U2L-wo-mtb" userLabel="AppNameLabel">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="fPP-71-8E3"/>
+                                    <constraint firstAttribute="width" constant="375" id="vuk-IP-hOT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="41"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="6NL-4E-grx" userLabel="ActivityIndicatorView">
+                                <color key="color" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Stock Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1qs-1I-e2j">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="No. of Shares" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tj3-IC-9Ur">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1LB-y2-FAA">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="67" id="1xm-Ni-NR9"/>
+                                </constraints>
+                                <state key="normal" title="Buy"/>
+                                <connections>
+                                    <action selector="buyStock:" destination="FeI-g5-ecc" eventType="touchUpInside" id="YAI-Bd-vXS"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.69999999999999996" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kMI-b5-dK7">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="349" id="bEw-Id-B9x"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czg-8H-uBW">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="67" id="rAs-7K-Vvh"/>
+                                </constraints>
+                                <state key="normal" title="Sell"/>
+                                <connections>
+                                    <action selector="sellStock:" destination="FeI-g5-ecc" eventType="touchUpInside" id="bSL-2m-nX2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="1LB-y2-FAA" secondAttribute="trailing" constant="20" id="2Sa-UZ-9xz"/>
+                            <constraint firstItem="6NL-4E-grx" firstAttribute="top" secondItem="U2L-wo-mtb" secondAttribute="bottom" constant="19" id="6o2-7h-reh"/>
+                            <constraint firstItem="Tj3-IC-9Ur" firstAttribute="leading" secondItem="0mK-Y5-JGg" secondAttribute="leading" constant="8" id="8rK-U9-p9A"/>
+                            <constraint firstItem="czg-8H-uBW" firstAttribute="top" secondItem="Tj3-IC-9Ur" secondAttribute="bottom" constant="24" id="JQb-qY-KYh"/>
+                            <constraint firstItem="8BP-9S-SUr" firstAttribute="width" secondItem="0mK-Y5-JGg" secondAttribute="width" id="Mka-DS-O1r"/>
+                            <constraint firstItem="czg-8H-uBW" firstAttribute="leading" secondItem="0mK-Y5-JGg" secondAttribute="leading" constant="20" id="O0l-Rb-R2e"/>
+                            <constraint firstItem="8BP-9S-SUr" firstAttribute="height" secondItem="0mK-Y5-JGg" secondAttribute="height" id="Oin-Xk-FJX"/>
+                            <constraint firstItem="8BP-9S-SUr" firstAttribute="centerY" secondItem="0mK-Y5-JGg" secondAttribute="centerY" id="SKq-Lt-afP"/>
+                            <constraint firstItem="Tj3-IC-9Ur" firstAttribute="top" secondItem="1qs-1I-e2j" secondAttribute="bottom" constant="16" id="YPr-Wa-ZDG"/>
+                            <constraint firstItem="1LB-y2-FAA" firstAttribute="top" secondItem="Tj3-IC-9Ur" secondAttribute="bottom" constant="24" id="b6j-3z-ZrX"/>
+                            <constraint firstItem="1qs-1I-e2j" firstAttribute="leading" secondItem="0mK-Y5-JGg" secondAttribute="leading" constant="8" id="beq-NH-51H"/>
+                            <constraint firstItem="kMI-b5-dK7" firstAttribute="leading" secondItem="0mK-Y5-JGg" secondAttribute="leading" constant="8" id="cJl-hO-xPj"/>
+                            <constraint firstItem="8BP-9S-SUr" firstAttribute="centerX" secondItem="0mK-Y5-JGg" secondAttribute="centerX" id="cSZ-Z8-IWE"/>
+                            <constraint firstItem="6NL-4E-grx" firstAttribute="centerY" secondItem="0mK-Y5-JGg" secondAttribute="centerY" id="daa-Dn-r8o"/>
+                            <constraint firstItem="ibK-po-CT8" firstAttribute="top" secondItem="kMI-b5-dK7" secondAttribute="bottom" constant="20" id="glU-w6-bJZ"/>
+                            <constraint firstItem="1qs-1I-e2j" firstAttribute="top" secondItem="2c1-95-Xrx" secondAttribute="bottom" constant="19" id="haG-G8-A3M"/>
+                            <constraint firstItem="U2L-wo-mtb" firstAttribute="centerX" secondItem="6NL-4E-grx" secondAttribute="centerX" id="mmc-3k-4uY"/>
+                            <constraint firstAttribute="trailing" secondItem="Tj3-IC-9Ur" secondAttribute="trailing" constant="8" id="p13-Gd-5X9"/>
+                            <constraint firstItem="6NL-4E-grx" firstAttribute="centerX" secondItem="0mK-Y5-JGg" secondAttribute="centerX" id="pUe-FT-BqR"/>
+                            <constraint firstAttribute="trailing" secondItem="1qs-1I-e2j" secondAttribute="trailing" constant="8" id="y8k-nq-erI"/>
+                            <constraint firstAttribute="trailing" secondItem="kMI-b5-dK7" secondAttribute="trailing" constant="8" id="z0c-mB-C4h"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="bWC-HZ-ccV"/>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="6NL-4E-grx" id="643-zi-nhd"/>
+                        <outlet property="appNameLabel" destination="U2L-wo-mtb" id="Y52-AX-14o"/>
+                        <outlet property="debugTextView" destination="kMI-b5-dK7" id="sCZ-Xa-X1U"/>
+                        <outlet property="numberOfShareField" destination="Tj3-IC-9Ur" id="1qu-bN-Qvi"/>
+                        <outlet property="stockCodeField" destination="1qs-1I-e2j" id="tad-8y-7nj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mdi-lB-a4r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-25.5" y="1308.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BackgroundImage" width="375" height="667"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</document>
