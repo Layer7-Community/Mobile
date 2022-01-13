@@ -1,0 +1,2 @@
+include ':UploadMultipartSampleApp'
+rootProject.name='MagTraining'
