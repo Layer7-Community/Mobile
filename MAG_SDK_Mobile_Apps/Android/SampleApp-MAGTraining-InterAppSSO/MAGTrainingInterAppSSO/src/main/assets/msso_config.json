@@ -1,0 +1,136 @@
+{
+  "server": {
+    "hostname": "mag-sdk-automation-gw-10-0.lvn.broadcom.net",
+    "port": 8443,
+    "prefix": "",
+    "server_certs": [
+      [
+        "-----BEGIN CERTIFICATE-----",
+        "MIIEqDCCA5CgAwIBAgIIAz6aysPgqlkwDQYJKoZIhvcNAQELBQAwgb0xCzAJBgNVBAYTAklOMRIw",
+        "EAYDVQQIDAlLYXJuYXRha2ExEjAQBgNVBAcMCUJhbmdhbG9yZTERMA8GA1UECgwIQnJvYWRjb20x",
+        "FDASBgNVBAsMC0Jyb2FkY29tIENBMSwwKgYDVQQDDCNkaGNwLTEwLTgyLTE1NS01NC5kaGNwLmJy",
+        "b2FkY29tLm5ldDEvMC0GCSqGSIb3DQEJARYgYXNod2lua3VtYXIuc3VyYWJoaUBicm9hZGNvbS5j",
+        "b20wHhcNMjExMTIzMTQxODAwWhcNMjIxMTIzMTQxNTAwWjCBvjELMAkGA1UEBhMCSU4xEjAQBgNV",
+        "BAgTCUthcm5hdGFrYTESMBAGA1UEBxMJQmFuZ2Fsb3JlMREwDwYDVQQKEwhCcm9hZGNvbTENMAsG",
+        "A1UECxMEQVBJTTE0MDIGA1UEAxMrbWFnLXNkay1hdXRvbWF0aW9uLWd3LTEwLTAubHZuLmJyb2Fk",
+        "Y29tLm5ldDEvMC0GCSqGSIb3DQEJARYgYXNod2lua3VtYXIuc3VyYWJoaUBicm9hZGNvbS5jb20w",
+        "ggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDwT6XGblpe+RSdySkhuJ1nVXu2uNal4Ie6",
+        "KmFxUhQo8bavlBePwFrD4RcXzVMqkOxfZhXsULGFv+ec0+mQBeOg6/1xDht7OqbUlyWXq66hrP1l",
+        "C08ox63D2vefvk/ordFoiWoUbQ2/vopDaEEe/prRborQDXt0qsNABYeRz2b32ibiZWK4VnGpzmQv",
+        "Y6sbMIZ6JczzD/mRqZS4RDw3R+WVdwj0yxkUmYl9u4Q4c8GY5SlI1sw/FMyDJAPWfB1QbLpVNUnQ",
+        "VBm2EjPr2OgX7qOAn1C7ZydK8PGqtiN6130wuOas+Tly2A64j0549E2/NFF1LlVg42W3rZyk8e5z",
+        "FQihAgMBAAGjgagwgaUwCQYDVR0TBAIwADAdBgNVHQ4EFgQUvdKcZATZMGRMvJO5cpooogOhgM4w",
+        "HwYDVR0jBBgwFoAUGlhHqcZFU86KGaeMY6Kdbe+yic4wCwYDVR0PBAQDAgL8MBMGA1UdJQQMMAoG",
+        "CCsGAQUFBwMBMDYGA1UdEQQvMC2CK21hZy1zZGstYXV0b21hdGlvbi1ndy0xMC0wLmx2bi5icm9h",
+        "ZGNvbS5uZXQwDQYJKoZIhvcNAQELBQADggEBALFfVbInMJsoP3I7EJZBDcTqoD7t7tvx9P+JE5Cy",
+        "n+lKur7ea2jWl+VN9ZHfhfSiARlhkwWOrGV4KRxA0PueMe5DezE3t+DeqHbPQNAwBD+OFQEhU+iX",
+        "MgN1mGtzDbxfO+AqhA10w8B2KQSKtfBr7PX0l38vJjJBdsmQPAROUypPNE5PZju9uikzIZ5FieqZ",
+        "hnYZc2aOUMje83akpz3UjZtU5FfrYUVBKrFeyz4R2xM+JtpcEszZ1HKOt9Zzvg16A01u7UQT2fqe",
+        "c5rO7ToRvQfAsE6mdU8NQ2HL8tIRjgLv3l5FxNdk/B92liEjNmhkbgwQjqm7VJYXNXpKL6rqHPY=",
+        "-----END CERTIFICATE-----"
+      ]
+    ]
+  },
+  "oauth": {
+    "client": {
+      "organization": "Broadcom",
+      "description": "What is the app used for?",
+      "client_name": "Naveen_Client",
+      "client_type": "confidential",
+      "registered_by": "admin",
+      "client_custom": {},
+      "client_ids": [
+        {
+          "client_id": "0e2c4e65-8ee2-4936-a04a-6036bca72c34",
+          "client_secret": "",
+          "scope": "openid msso phone profile address email msso_register msso_client_register",
+          "redirect_uri": "oob",
+          "environment": "ALL",
+          "status": "ENABLED",
+          "registered_by": "admin",
+          "service_ids": "",
+          "account_plan_mapping_ids": "",
+          "client_key_custom": {
+            "openid_registration": {
+              "request": {},
+              "oauth_client": true,
+              "response": {
+                "client_id": "0e2c4e65-8ee2-4936-a04a-6036bca72c34",
+                "client_secret": "0e2c4e65-8ee2-4936-a04a-6036bca72c34",
+                "client_secret_expires_at": "0",
+                "client_id_issued_at": 1638426320,
+                "registration_access_token": "",
+                "registration_client_uri": "",
+                "token_endpoint_auth_method": "client_secret_basic",
+                "token_endpoint_auth_signing_alg": "",
+                "application_type": "",
+                "redirect_uris": [
+                  "oob"
+                ],
+                "client_name": "Naveen_Client",
+                "subject_type": "pairwise",
+                "sector_identifier_uri": "",
+                "contacts": [],
+                "response_types": [],
+                "grant_types": [],
+                "id_token_signed_response_alg": "HS256",
+                "userinfo_signed_response_alg": "",
+                "environment": "ALL",
+                "organization": "Broadcom",
+                "master": true,
+                "description": "What is the app used for?",
+                "scope": "openid msso phone profile address email msso_register msso_client_register",
+                "jwks": "",
+                "jwks_uri": ""
+              }
+            }
+          }
+        }
+      ]
+    },
+    "system_endpoints": {
+      "authorization_endpoint_path": "/auth/oauth/v2/authorize",
+      "token_endpoint_path": "/auth/oauth/v2/token",
+      "token_revocation_endpoint_path": "/auth/oauth/v2/token/revoke",
+      "usersession_logout_endpoint_path": "/connect/session/logout",
+      "usersession_status_endpoint_path": "/connect/session/status"
+    },
+    "oauth_protected_endpoints": {
+      "userinfo_endpoint_path": "/openid/connect/v1/userinfo"
+    }
+  },
+  "mag": {
+    "system_endpoints": {
+      "device_register_endpoint_path": "/connect/device/register",
+      "device_renew_endpoint_path": "/connect/device/renew",
+      "device_client_register_endpoint_path": "/connect/device/register/client",
+      "device_remove_endpoint_path": "/connect/device/remove",
+      "client_credential_init_endpoint_path": "/connect/client/initialize",
+      "authenticate_otp_endpoint_path": "/auth/generateOTP"
+    },
+    "oauth_protected_endpoints": {
+      "enterprise_browser_endpoint_path": "/connect/enterprise/browser",
+      "device_list_endpoint_path": "/connect/device/list",
+      "device_metadata_endpoint_path": "/connect/device/metadata"
+    },
+    "mobile_sdk": {
+      "sso_enabled": true,
+      "location_enabled": true,
+      "location_provider": "network",
+      "msisdn_enabled": true,
+      "enable_public_key_pinning": false,
+      "trusted_public_pki": false,
+      "trusted_cert_pinned_public_key_hashes": [],
+      "client_cert_rsa_keybits": 1024
+    },
+    "ble": {
+      "msso_ble_service_uuid": "980c2f36-bde3-11e4-8dfc-aa07a5b093db",
+      "msso_ble_characteristic_uuid": "980c34cc-bde3-11e4-8dfc-aa07a5b093db",
+      "msso_ble_rssi": -80
+    }
+  },
+  "custom": {
+    "oauth_demo_protected_api_endpoint_path": "/oauth/v2/protectedapi/foo",
+    "mag_demo_products_endpoint_path": "/protected/resource/products"
+  }
+}
