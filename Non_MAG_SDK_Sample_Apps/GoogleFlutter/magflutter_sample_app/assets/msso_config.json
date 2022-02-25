@@ -1,0 +1,120 @@
+{
+  "server": {
+    "hostname": "mobile.brcmlabs.com",
+    "port": 443,
+    "prefix": "",
+    "server_certs": [
+      [
+        "-----BEGIN CERTIFICATE-----",
+        "MIIHPDCCBiSgAwIBAgIMMp5pgLalet/kPvgGMA0GCSqGSIb3DQEBCwUAMEwxCzAJ",
+        "BgNVBAYTAkJFMRkwFwYDVQQKExBHbG9iYWxTaWduIG52LXNhMSIwIAYDVQQDExlB",
+        "bHBoYVNTTCBDQSAtIFNIQTI1NiAtIEcyMB4XDTIxMTEwOTIyMTg1NFoXDTIyMTIx",
+        "MTIyMTg1NFowGTEXMBUGA1UEAwwOKi5icmNtbGFicy5jb20wggIiMA0GCSqGSIb3",
+        "DQEBAQUAA4ICDwAwggIKAoICAQC775Q4/JJ7Xx66B1wF5ai5tXYEiwCMslf1cToF",
+        "AAfKQ0mdF9BU0CsHNhWNtDyqtmWkp0JjuK9FfbFLgntQxZK6UPCuXoXh5dJhP4Ax",
+        "+lv9njJjX0k2ZkKmzAFrLp1QiSrg2WqzV3u0s6bToQ4yyqPxLiQogBayf+17DQsL",
+        "cNSSJEMfe3dptT4GiNuCbE6/ec9TuijQdoC8ZIi94pSSZUNF3RM2E54stA3c30a7",
+        "2KP4wBe+++EU5F7lJuE/iXjNv+YeYPv4B0cZqOpkKQEzG5pnA6UyBEP4W/cy64j4",
+        "W9UxR6II1lj15osKiaCPT/c89Z7/ftzTyoFiiwoS8jwLxKsY97ehBvlfXP9EWHDk",
+        "9vyciRTOmp1oaigQZjFfrAHucI9WdZ90lbQNQaY6G7O6xxARzUATric7yUKKsRTz",
+        "MbyeJDIKGxiO4r0eCPwUuzbp4Sx/ZRev+6ZHM+tKfT2QVPsE5xP+Ne0mrmEl0Ulr",
+        "7fteDWfjNJolKNRImeTsDThaHC04WVWt7ZdNEo8x79aKUjJcH4FJ2oNYuTvk0DxS",
+        "n3ScJjfRt3I8VgtxqxUZPZIjnrPYLD6WKiUZpSfTT3Q3opMaYMjrI9RAaGEq/xNT",
+        "RqJAZRd0jqW6yaOtQOyrMZ4XkqhZsTJSyWIN6xvoRmI47qm8dZXBLp0pD+ykD0do",
+        "eG78qwIDAQABo4IDTzCCA0swDgYDVR0PAQH/BAQDAgWgMIGJBggrBgEFBQcBAQR9",
+        "MHswQgYIKwYBBQUHMAKGNmh0dHA6Ly9zZWN1cmUyLmFscGhhc3NsLmNvbS9jYWNl",
+        "cnQvZ3NhbHBoYXNoYTJnMnIxLmNydDA1BggrBgEFBQcwAYYpaHR0cDovL29jc3Ay",
+        "Lmdsb2JhbHNpZ24uY29tL2dzYWxwaGFzaGEyZzIwVwYDVR0gBFAwTjBCBgorBgEE",
+        "AaAyAQoKMDQwMgYIKwYBBQUHAgEWJmh0dHBzOi8vd3d3Lmdsb2JhbHNpZ24uY29t",
+        "L3JlcG9zaXRvcnkvMAgGBmeBDAECATAJBgNVHRMEAjAAMD4GA1UdHwQ3MDUwM6Ax",
+        "oC+GLWh0dHA6Ly9jcmwyLmFscGhhc3NsLmNvbS9ncy9nc2FscGhhc2hhMmcyLmNy",
+        "bDAnBgNVHREEIDAegg4qLmJyY21sYWJzLmNvbYIMYnJjbWxhYnMuY29tMB0GA1Ud",
+        "JQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAfBgNVHSMEGDAWgBT1zdU8CFD5ak86",
+        "t5faVoPmadJo9zAdBgNVHQ4EFgQUCiiRU+1swDUXCNCIisnzMCam0ykwggF/Bgor",
+        "BgEEAdZ5AgQCBIIBbwSCAWsBaQB3AG9Tdqwx8DEZ2JkApFEV/3cVHBHZAsEAKQaN",
+        "sgiaN9kTAAABfQbIYWgAAAQDAEgwRgIhANi6S3/j4pBdtqMKNZOTAtPvq012SYLT",
+        "dFoup+8+UjR+AiEAnSxZAHnhOW0eTWIGWODjQ7zfXthzU4vPzBu5DfI+S5MAdgAp",
+        "eb7wnjk5IfBWc59jpXflvld9nGAK+PlNXSZcJV3HhAAAAX0GyGFqAAAEAwBHMEUC",
+        "IQCMshoea6lO60BCyjRNtKxg8G23L8d8tBbEveF0jQCtNQIgb3MDJUMUC1Q5f6c7",
+        "s72KnY7VDuAf6dD4Od6r18tlz8cAdgBRo7D1/QF5nFZtuDd4jwykeswbJ8v3nohC",
+        "mg3+1IsF5QAAAX0GyGGUAAAEAwBHMEUCIA2B/B3PDQNXRH2vTY/6BipnYnwrdOpm",
+        "53k9N85B0R4/AiEAzWKP2O1nl5pDB4a/U3QSRdxdWYNx9HyvMTwyzj2dYvQwDQYJ",
+        "KoZIhvcNAQELBQADggEBANfDE7lhPq+57rgzdCn/PjsH0HQY8Y9NJLdbEqhdtV9t",
+        "r/EzmhzpCey6BsRf/9majnEO043ksBXCObMfJX9jkLv+q88jwF4zFB7TliiXLUxA",
+        "7GAcZCkRmPmn+RjDb3OOkkh6e9u7OsCIuc7bSDNtEKUBM3ro5HAL8Rmap1l98ODk",
+        "yaGvS96LG7cbghBUeKx3g3YKMIYXwcHr0YV9RQ+V9j19enDqZiZUCBGBGK9Afe+Y",
+        "cEwDWk4NznWhUIesmbihG7oNvBiFsGnOoIPX4ngtbtmhWwE7fGUng55HSNRw+plK",
+        "3HmWnm02mBvTmGqQ6IBVXj3L92IqkB8P9MHCIyFzBuw=",
+        "-----END CERTIFICATE-----"
+      ]
+    ]
+  },
+  "oauth": {
+    "client": {
+      "organization": "CA Technologies",
+      "description": "Example application for Mobile SSO demonstrations",
+      "client_name": "AppA",
+      "client_type": "confidential",
+      "registered_by": "admin",
+      "client_custom": {},
+      "client_ids": [
+        {
+          "client_id": "3f27bb4f-b5aa-458b-962b-14d352b7977c",
+          "client_secret": "",
+          "scope": "openid msso phone profile address email msso_register",
+          "redirect_uri": "https://android.ssosdk.ca.com/android",
+          "environment": "Android",
+          "status": "ENABLED",
+          "registered_by": "admin",
+          "service_ids": "",
+          "account_plan_mapping_ids": "",
+          "client_key_custom": {}
+        }
+      ]
+    },
+    "system_endpoints": {
+      "authorization_endpoint_path": "/auth/oauth/v2/authorize",
+      "token_endpoint_path": "/auth/oauth/v2/token",
+      "token_revocation_endpoint_path": "/auth/oauth/v2/token/revoke",
+      "usersession_logout_endpoint_path": "/connect/session/logout",
+      "usersession_status_endpoint_path": "/connect/session/status"
+    },
+    "oauth_protected_endpoints": {
+      "userinfo_endpoint_path": "/openid/connect/v1/userinfo"
+    }
+  },
+  "mag": {
+    "system_endpoints": {
+      "device_register_endpoint_path": "/connect/device/register",
+      "device_renew_endpoint_path": "/connect/device/renew",
+      "device_client_register_endpoint_path": "/connect/device/register/client",
+      "device_remove_endpoint_path": "/connect/device/remove",
+      "client_credential_init_endpoint_path": "/connect/client/initialize",
+      "authenticate_otp_endpoint_path": "/auth/generateOTP"
+    },
+    "oauth_protected_endpoints": {
+      "enterprise_browser_endpoint_path": "/connect/enterprise/browser",
+      "device_list_endpoint_path": "/connect/device/list",
+      "device_metadata_endpoint_path": "/connect/device/metadata"
+    },
+    "mobile_sdk": {
+      "sso_enabled": true,
+      "location_enabled": true,
+      "location_provider": "network",
+      "msisdn_enabled": true,
+      "enable_public_key_pinning": true,
+      "trusted_public_pki": false,
+      "trusted_cert_pinned_public_key_hashes": [],
+      "client_cert_rsa_keybits": 1024
+    },
+    "ble": {
+      "msso_ble_service_uuid": "980c2f36-bde3-11e4-8dfc-aa07a5b093db",
+      "msso_ble_characteristic_uuid": "980c34cc-bde3-11e4-8dfc-aa07a5b093db",
+      "msso_ble_rssi": -80
+    }
+  },
+  "custom": {
+    "oauth_demo_protected_api_endpoint_path": "/oauth/v2/protectedapi/foo",
+    "mag_demo_products_endpoint_path": "/protected/resource/products"
+  }
+}
