@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MagTraining.iml" filepath="$PROJECT_DIR$/MagTraining.iml" group="MagTraining" />
+      <module fileurl="file://$PROJECT_DIR$/MagTrainingSessionTransfer BLE/MagTrainingSessionTransfer BLE.iml" filepath="$PROJECT_DIR$/MagTrainingSessionTransfer BLE/MagTrainingSessionTransfer BLE.iml" group="MagTraining/MagTrainingSessionTransfer BLE" />
+      <module fileurl="file://$PROJECT_DIR$/MagTrainingSessionTransfer BLE2/MagTrainingSessionTransfer BLE2.iml" filepath="$PROJECT_DIR$/MagTrainingSessionTransfer BLE2/MagTrainingSessionTransfer BLE2.iml" group="MagTraining/MagTrainingSessionTransfer BLE2" />
+    </modules>
+  </component>
+</project>

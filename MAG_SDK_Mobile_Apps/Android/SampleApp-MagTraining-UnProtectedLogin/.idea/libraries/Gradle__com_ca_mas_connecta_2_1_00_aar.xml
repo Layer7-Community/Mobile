@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.ca:mas-connecta:2.1.00@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3bfde4fc2bf61fa03109682435af7cbf/mas-connecta-2.1.00/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3bfde4fc2bf61fa03109682435af7cbf/mas-connecta-2.1.00/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ca/mas-connecta/2.1.00/8502f5619f62d2b90963d64d154c706e720c53de/mas-connecta-2.1.00-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ca/mas-connecta/2.1.00/67a8b454c1043a2df0483488a1a963a07899030c/mas-connecta-2.1.00-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

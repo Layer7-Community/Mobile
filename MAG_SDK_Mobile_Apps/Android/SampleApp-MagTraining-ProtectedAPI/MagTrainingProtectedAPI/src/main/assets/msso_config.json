@@ -1,0 +1,164 @@
+{
+  "server": {
+    "hostname": "mobile.dhcp.broadcom.net",
+    "port": 8443,
+    "prefix": "",
+    "server_certs": [
+      [
+        "-----BEGIN CERTIFICATE-----",
+        "MIIEZjCCA06gAwIBAgIJAPXi1M0/z1aGMA0GCSqGSIb3DQEBCwUAMHoxCzAJBgNVBAYTAklOMRIw",
+        "EAYDVQQIDAlLQVJOQVRBS0ExEjAQBgNVBAcMCUJhbmdhbG9yZTERMA8GA1UECgwIQnJvYWRjb20x",
+        "DTALBgNVBAsMBEFQSU0xITAfBgNVBAMMGG1vYmlsZS5kaGNwLmJyb2FkY29tLm5ldDAeFw0xOTA4",
+        "MTMwNjEwMDlaFw0yMDA4MTIwNjEwMDlaMHoxCzAJBgNVBAYTAklOMRIwEAYDVQQIDAlLQVJOQVRB",
+        "S0ExEjAQBgNVBAcMCUJhbmdhbG9yZTERMA8GA1UECgwIQnJvYWRjb20xDTALBgNVBAsMBEFQSU0x",
+        "ITAfBgNVBAMMGG1vYmlsZS5kaGNwLmJyb2FkY29tLm5ldDCCASIwDQYJKoZIhvcNAQEBBQADggEP",
+        "ADCCAQoCggEBAODV4I5kqotf3VHK9BishZJbuBqmnfz8ZwyRHNBdJAdoNkJ0iBQxaEqyqOLgwvr5",
+        "9hAMJNrHCcIdh2fxyViSRLLg1L7hjsUqLFKqvIX6IyTFRbjmVW20hi/TiyEjg8bWGJFCt1WLvv0o",
+        "5wkI+E42EZivaAALYs0MvgQmKgQWB1UJci/ZrZ6ZrS1pOPhHQVa7qPDkYHe7znKEsvqM3q0wNXF/",
+        "bLJCRR1nbBjm/VjrUVU9z60kRl+euOJKL/pqt8rF4U4kRcr+G7nPb/8ghYwRaS45IG5tUxbOMYcN",
+        "zSjJISRLXfAo9MifhKLlwe6cJPsAOejTY//rGsQNXIMnnWvTZw0CAwEAAaOB7jCB6zCBlgYDVR0j",
+        "BIGOMIGLoX6kfDB6MQswCQYDVQQGEwJJTjESMBAGA1UECAwJS0FSTkFUQUtBMRIwEAYDVQQHDAlC",
+        "YW5nYWxvcmUxETAPBgNVBAoMCEJyb2FkY29tMQ0wCwYDVQQLDARBUElNMSEwHwYDVQQDDBhtb2Jp",
+        "bGUuZGhjcC5icm9hZGNvbS5uZXSCCQD14tTNP89WhjAJBgNVHRMEAjAAMAsGA1UdDwQEAwIE8DAT",
+        "BgNVHSUEDDAKBggrBgEFBQcDATAjBgNVHREEHDAaghhtb2JpbGUuZGhjcC5icm9hZGNvbS5uZXQw",
+        "DQYJKoZIhvcNAQELBQADggEBAF/v+drmGDdX9v7/hXxasqXQMzsgNPjf29DZkm6wyKoxPiaakqfe",
+        "onFWw/xNCrcjguh11zh2WNonLI3Slx+p58ngXy/O73SNYEBJFySmOPlTip+g522r2Nw27NRqbrTh",
+        "30LtLMIiAfre9CqQOYATUhxtJV2CsTSho+j3Qr4zLAriK53qhmqJZGiaIrB6qLZ4YBKpVYGNsUqE",
+        "SdDyclZxtcBWV86EDR3a4OgcNySXBuXfCBMxx/dCY5Loimks+HYznaIR/RRY0PgmKJdGNB/Pf1cK",
+        "UUwKETT1Xwo8cLW56xG/Vxkn4yH5apjqSrr2h2v6+z/dQ9fFmFpO78aauUYJoa8=",
+        "-----END CERTIFICATE-----"
+      ]
+    ]
+  },
+  "oauth": {
+    "client": {
+      "organization": "BRC",
+      "description": "Allow Backup testing",
+      "client_name": "Ruqiya",
+      "client_type": "confidential",
+      "registered_by": "admin",
+      "client_custom": {},
+      "client_ids": [
+        {
+          "client_id": "fcb3efb1-b933-4644-9fe0-e63c16447eb2",
+          "client_secret": "",
+          "scope": "openid msso phone profile address email msso_client_register msso_register mas_messaging mas_storage mas_identity mas_identity_retrieve_users mas_identity_create_users mas_identity_update_users mas_identity_delete_users mas_identity_retrieve_groups mas_identity_create_groups mas_identity_update_groups mas_identity_delete_groups",
+          "redirect_uri": "camsso://com.camsso.appc",
+          "environment": "ALL",
+          "status": "ENABLED",
+          "registered_by": "admin",
+          "service_ids": "",
+          "account_plan_mapping_ids": "",
+          "client_key_custom": {
+            "openid_registration": {
+              "request": {},
+              "oauth_client": true,
+              "response": {
+                "client_id": "fcb3efb1-b933-4644-9fe0-e63c16447eb2",
+                "client_secret": "fcb3efb1-b933-4644-9fe0-e63c16447eb2",
+                "client_secret_expires_at": "0",
+                "client_id_issued_at": 1575436456,
+                "registration_access_token": "",
+                "registration_client_uri": "",
+                "token_endpoint_auth_method": "client_secret_basic",
+                "token_endpoint_auth_signing_alg": "",
+                "application_type": "",
+                "redirect_uris": [
+                  "camsso://com.camsso.appc"
+                ],
+                "client_name": "Ruqiya",
+                "subject_type": "pairwise",
+                "sector_identifier_uri": "",
+                "contacts": [],
+                "response_types": [],
+                "grant_types": [],
+                "id_token_signed_response_alg": "HS256",
+                "userinfo_signed_response_alg": "",
+                "environment": "ALL",
+                "organization": "BRC",
+                "master": true,
+                "description": "Allow Backup testing",
+                "scope": "openid msso phone profile address email msso_client_register msso_register mas_messaging mas_storage mas_identity mas_identity_retrieve_users mas_identity_create_users mas_identity_update_users mas_identity_delete_users mas_identity_retrieve_groups mas_identity_create_groups mas_identity_update_groups mas_identity_delete_groups",
+                "jwks": "",
+                "jwks_uri": ""
+              }
+            }
+          }
+        }
+      ]
+    },
+    "system_endpoints": {
+      "authorization_endpoint_path": "/auth/oauth/v2/authorize",
+      "token_endpoint_path": "/auth/oauth/v2/token",
+      "token_revocation_endpoint_path": "/auth/oauth/v2/token/revoke",
+      "usersession_logout_endpoint_path": "/connect/session/logout",
+      "usersession_status_endpoint_path": "/connect/session/status"
+    },
+    "oauth_protected_endpoints": {
+      "userinfo_endpoint_path": "/openid/connect/v1/userinfo"
+    }
+  },
+  "mas": {
+    "scim-path": "/SCIM/MAS/v2"
+  },
+  "mag": {
+    "system_endpoints": {
+      "device_register_endpoint_path": "/connect/device/register",
+      "device_renew_endpoint_path": "/connect/device/renew",
+      "device_client_register_endpoint_path": "/connect/device/register/client",
+      "device_remove_endpoint_path": "/connect/device/remove",
+      "client_credential_init_endpoint_path": "/connect/client/initialize",
+      "authenticate_otp_endpoint_path": "/auth/generateOTP"
+    },
+    "oauth_protected_endpoints": {
+      "enterprise_browser_endpoint_path": "/connect/enterprise/browser",
+      "device_list_endpoint_path": "/connect/device/list",
+      "device_metadata_endpoint_path": "/connect/device/metadata"
+    },
+    "mobile_sdk": {
+      "sso_enabled": true,
+      "location_enabled": true,
+      "location_provider": "network",
+      "msisdn_enabled": true,
+      "enable_public_key_pinning": false,
+      "trusted_public_pki": false,
+      "trusted_cert_pinned_public_key_hashes": [],
+      "client_cert_rsa_keybits": 1024
+    },
+    "ble": {
+      "msso_ble_service_uuid": "980c2f36-bde3-11e4-8dfc-aa07a5b093db",
+      "msso_ble_characteristic_uuid": "980c34cc-bde3-11e4-8dfc-aa07a5b093db",
+      "msso_ble_rssi": -80
+    }
+  },
+  "custom": {
+    "oauth_demo_protected_api_endpoint_path": "/oauth/v2/protectedapi/foo",
+    "mag_demo_products_endpoint_path": "/protected/resource/products",
+    "mas_riskanalysis_endpoints": {
+      "get_deviceid_endpoint_path": "/auth/riskauth/risk/generateDeviceID"
+    },
+    "mas_authotp_endpoints": {
+      "verifyotp_endpoint_path": "/auth/strongauth/aotp/verifyAOTP/",
+      "create_aotp_endpoint_path": "/auth/strongauth/aotp/create/",
+      "delete_aotp_endpoint_path": "/auth/strongauth/aotp/delete/",
+      "disable_aotp_endpoint_path": "/auth/strongauth/aotp/disable/",
+      "download_aotp_endpoint_path": "/auth/strongauth/aotp/download/",
+      "enable_aotp_endpoint_path": "/auth/strongauth/aotp/enable/",
+      "fetch_aotp_endpoint_path": "/auth/strongauth/aotp/fetch/",
+      "reissue_aotp_endpoint_path": "/auth/strongauth/aotp/reissue/",
+      "reset_aotp_endpoint_path": "/auth/strongauth/aotp/reset/"
+    },
+    "mas_authid_endpoints": {
+      "getchallenge_endpoint_path": "/auth/strongauth/authid/challenge",
+      "verifychallenge_endpoint_path": "/auth/strongauth/authid/verifySignedChallenge",
+      "create_authid_endpoint_path": "/auth/strongauth/authid/create/",
+      "delete_authid_endpoint_path": "/auth/strongauth/authid/delete/",
+      "disable_authid_endpoint_path": "/auth/strongauth/authid/disable/",
+      "download_authid_endpoint_path": "/auth/strongauth/authid/download/",
+      "enable_authid_endpoint_path": "/auth/strongauth/authid/enable/",
+      "fetch_authid_endpoint_path": "/auth/strongauth/authid/fetch/",
+      "reissue_authid_endpoint_path": "/auth/strongauth/authid/reissue/",
+      "reset_authid_endpoint_path": "/auth/strongauth/authid/reset/"
+    }
+  }
+}

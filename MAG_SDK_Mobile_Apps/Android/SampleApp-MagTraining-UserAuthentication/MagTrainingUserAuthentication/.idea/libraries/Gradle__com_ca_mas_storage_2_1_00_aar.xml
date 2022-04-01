@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: com.ca:mas-storage:2.1.00@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3a2c4077e0a164fb2b246c59c47af7bc/mas-storage-2.1.00/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3a2c4077e0a164fb2b246c59c47af7bc/mas-storage-2.1.00/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3a2c4077e0a164fb2b246c59c47af7bc/mas-storage-2.1.00/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ca/mas-storage/2.1.00/9fc645afc66a8f4adb7e0ca7b1bcc1f4bac02fd4/mas-storage-2.1.00-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ca/mas-storage/2.1.00/f45f11d66dbd88c8585531df3f8c42b46ce90185/mas-storage-2.1.00-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

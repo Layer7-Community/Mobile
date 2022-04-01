@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MAS Sample</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="acc_name">My Account</string>
+    <string name="authenticator_label">CA</string>
+</resources>

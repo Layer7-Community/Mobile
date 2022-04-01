@@ -1,0 +1,2 @@
+include ':MagTraining-Setup-app'
+rootProject.name='MagTraining'

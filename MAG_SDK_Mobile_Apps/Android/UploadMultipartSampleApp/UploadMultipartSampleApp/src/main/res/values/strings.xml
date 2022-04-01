@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">App-A</string>
+    <string name="acc_name">My Account</string>
+    <string name="authenticator_label">Broadcom</string>
+</resources>
