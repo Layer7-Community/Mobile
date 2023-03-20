@@ -6,4 +6,9 @@
     <string name="user_name">admin</string>
     <string name="password">7layer</string>
     <string name="wrong_password">layer</string>
+    <string name="email">sdklogin22@gmail.com</string>
+    <string name="passGoggle">google123gg</string>
+    <string name="passFacebook">facebook!@#</string>
+    <string name="passLinkedIn">Linkedin!@#</string>
+    <string name="passSalesforce">layer7sdk</string>
 </resources>

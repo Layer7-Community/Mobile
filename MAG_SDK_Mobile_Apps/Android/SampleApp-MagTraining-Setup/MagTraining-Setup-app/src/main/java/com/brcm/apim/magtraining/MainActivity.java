@@ -1,5 +1,6 @@
 package com.brcm.apim.magtraining;
 
+import android.Manifest;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -7,7 +8,10 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationManager;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.Process;
+import android.os.SystemClock;
 import android.provider.Settings;
 import android.telephony.TelephonyManager;
 import android.util.Log;
@@ -20,8 +24,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
+import com.ca.mas.core.log.MASLoggerConfiguration;
 import com.ca.mas.foundation.MAS;
 import com.ca.mas.foundation.MASCallback;
+import com.ca.mas.foundation.MASConfiguration;
 import com.ca.mas.foundation.MASConstants;
 
 import java.util.ArrayList;
@@ -144,7 +150,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        MAS.debug();
+        MASConfiguration.getMASLoggerConfiguration().setLogLevel(MASLoggerConfiguration.MASLogLevel.VERBOSE);
 
     }
 
@@ -155,6 +161,7 @@ public class MainActivity extends AppCompatActivity {
             int[] grantResults) {
 
 
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         String criticalPermission = null;
         for (int currGrant = 0; currGrant < grantResults.length; currGrant++) {
             if (grantResults[currGrant] == PackageManager.PERMISSION_GRANTED) {
@@ -166,6 +173,12 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if (criticalPermission != null) {
+            if(criticalPermission.equals(Manifest.permission.READ_LOGS)){
+                return;
+            }else if(Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU &&
+                    criticalPermission.equals(Manifest.permission.BLUETOOTH_SCAN)){
+                return;
+            }
 
             final String tempPermission = criticalPermission;
             runOnUiThread(new Runnable() {
@@ -180,9 +193,9 @@ public class MainActivity extends AppCompatActivity {
 
                                     @Override
                                     public void onClick(DialogInterface arg0, int arg1) {
-                                        android.os.SystemClock.sleep(1000);
+                                        SystemClock.sleep(1000);
                                         moveTaskToBack(true);
-                                        android.os.Process.killProcess(android.os.Process.myPid());
+                                        Process.killProcess(Process.myPid());
                                         System.exit(1);
 
                                     }

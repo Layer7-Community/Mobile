@@ -1,5 +1,6 @@
 package com.brcm.apim.app_b;
 
+import android.Manifest;
 import android.app.ActivityManager;
 import android.app.AlertDialog;
 import android.app.KeyguardManager;
@@ -11,6 +12,7 @@ import android.database.Cursor;
 import android.location.Location;
 import android.location.LocationManager;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
@@ -701,6 +703,14 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if (criticalPermission != null) {
+
+            if(criticalPermission.equals(Manifest.permission.READ_LOGS)){
+                return;
+            }else if(Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU &&(
+                    criticalPermission.equals(Manifest.permission.BLUETOOTH_SCAN) ||
+                            criticalPermission.equals(Manifest.permission.BLUETOOTH_CONNECT))){
+                return;
+            }
 
             final String tempPermission = criticalPermission;
             runOnUiThread( new Runnable() {

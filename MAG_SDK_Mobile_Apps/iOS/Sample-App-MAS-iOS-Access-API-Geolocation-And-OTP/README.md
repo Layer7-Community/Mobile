@@ -12,7 +12,7 @@ This sample app uses the MASFoundation and MASUI frameworks of the MAS SDK.
 2. In the terminal type: `pod update`   
    If this fails try: `pod install`
 3. Open the .xcworkspace (ie: MASStockTrading.xcworkspace).
-4. In the CA OAuth Manager, create an app, and export the msso_config file (https://you_server_name:8443/oauth/manager). For help with this file, see [iOS Guide](http://techdocs.broadcom.com/content/broadcom/techdocs/us/en/ca-enterprise-software/layer7-api-management/mobile-sdk-for-ca-mobile-api-gateway/2-2.html).
+4. In the CA OAuth Manager, create an app, and export the msso_config file (https://you_server_name:8443/oauth/manager). For help with this file, see [iOS Guide](http://techdocs.broadcom.com/content/broadcom/techdocs/us/en/ca-enterprise-software/layer7-api-management/mobile-sdk-for-ca-mobile-api-gateway/2-3.html).
 5. Copy the contents of the exported msso_config into the msso_config file in the Xcode workspace.
 6. In Policy Manager, import the policy tradePolicy.xml as /trade  
 a. Publish Web API -> Enter Service name as trade and Gateway URL as trade -> Finish  

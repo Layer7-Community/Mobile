@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exp:Export Version="3.0"
+    xmlns:L7p="http://www.layer7tech.com/ws/policy"
+    xmlns:exp="http://www.layer7tech.com/ws/policy/export" xmlns:wsp="http://schemas.xmlsoap.org/ws/2002/12/policy">
+    <exp:References>
+        <EncapsulatedAssertionReference RefType="com.l7tech.console.policy.exporter.EncapsulatedAssertionReference">
+            <Name>MSSO Require Registered Device - Mutual SSL</Name>
+            <Guid>ce9faafc-7d76-4818-9c56-0bb9a4b68e9c</Guid>
+        </EncapsulatedAssertionReference>
+        <EncapsulatedAssertionReference RefType="com.l7tech.console.policy.exporter.EncapsulatedAssertionReference">
+            <Name>OTK Require OAuth 2.0 Token</Name>
+            <Guid>393bcb93-82ad-4b55-8333-1119f607a560</Guid>
+        </EncapsulatedAssertionReference>
+    </exp:References>
+    <wsp:Policy xmlns:L7p="http://www.layer7tech.com/ws/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2002/12/policy">
+        <wsp:All wsp:Usage="Required">
+            <L7p:CommentAssertion>
+                <L7p:Comment stringValue="This is a test endpoint for Android Sample Login and Authorization App"/>
+            </L7p:CommentAssertion>
+            <L7p:CommentAssertion>
+                <L7p:Comment stringValue="This endpoint can safely be disabled or deleted."/>
+            </L7p:CommentAssertion>
+            <L7p:CustomizeErrorResponse>
+                <L7p:Content stringValue="${error.msg}"/>
+                <L7p:ContentType stringValue="${content-type}"/>
+                <L7p:ExtraHeaders nameValuePairArray="included">
+                    <L7p:item nameValuePair="included">
+                        <L7p:Key stringValue="Cache-Control"/>
+                        <L7p:Value stringValue="no-store"/>
+                    </L7p:item>
+                    <L7p:item nameValuePair="included">
+                        <L7p:Key stringValue="Pragma"/>
+                        <L7p:Value stringValue="no-cache"/>
+                    </L7p:item>
+                    <L7p:item nameValuePair="included">
+                        <L7p:Key stringValue="x-ca-err"/>
+                        <L7p:Value stringValue="0001${error.code}"/>
+                    </L7p:item>
+                </L7p:ExtraHeaders>
+                <L7p:HttpStatus stringValue="${status}"/>
+            </L7p:CustomizeErrorResponse>
+            <L7p:Encapsulated>
+                <L7p:EncapsulatedAssertionConfigGuid stringValue="ce9faafc-7d76-4818-9c56-0bb9a4b68e9c"/>
+                <L7p:EncapsulatedAssertionConfigName stringValue="MSSO Require Registered Device - Mutual SSL"/>
+                <L7p:Parameters mapValue="included">
+                    <L7p:entry>
+                        <L7p:key stringValue="lookupDevice"/>
+                        <L7p:value stringValue="true"/>
+                    </L7p:entry>
+                </L7p:Parameters>
+            </L7p:Encapsulated>
+            <L7p:Encapsulated>
+                <L7p:EncapsulatedAssertionConfigGuid stringValue="393bcb93-82ad-4b55-8333-1119f607a560"/>
+                <L7p:EncapsulatedAssertionConfigName stringValue="OTK Require OAuth 2.0 Token"/>
+                <L7p:Parameters mapValue="included">
+                    <L7p:entry>
+                        <L7p:key stringValue="cache_lifetime"/>
+                        <L7p:value stringValue="30"/>
+                    </L7p:entry>
+                    <L7p:entry>
+                        <L7p:key stringValue="given_access_token"/>
+                        <L7p:value stringValue=""/>
+                    </L7p:entry>
+                    <L7p:entry>
+                        <L7p:key stringValue="onetime"/>
+                        <L7p:value stringValue="false"/>
+                    </L7p:entry>
+                    <L7p:entry>
+                        <L7p:key stringValue="scope_fail"/>
+                        <L7p:value stringValue="false"/>
+                    </L7p:entry>
+                    <L7p:entry>
+                        <L7p:key stringValue="scope_required"/>
+                        <L7p:value stringValue=""/>
+                    </L7p:entry>
+                </L7p:Parameters>
+            </L7p:Encapsulated>
+            <L7p:SetVariable>
+                <L7p:Base64Expression stringValue="JHtyZXF1ZXN0Lmh0dHAucGFyYW1ldGVyLm9wZXJhdGlvbn0="/>
+                <L7p:Enabled booleanValue="false"/>
+                <L7p:VariableToSet stringValue="operation"/>
+            </L7p:SetVariable>
+            <wsp:OneOrMore wsp:Usage="Required">
+                <wsp:All wsp:Usage="Required">
+                    <L7p:ComparisonAssertion>
+                        <L7p:CaseSensitive booleanValue="false"/>
+                        <L7p:Enabled booleanValue="false"/>
+                        <L7p:Expression1 stringValue="${operation}"/>
+                        <L7p:ExpressionIsVariable booleanValue="false"/>
+                        <L7p:Operator operatorNull="null"/>
+                        <L7p:Predicates predicates="included">
+                            <L7p:item dataType="included">
+                                <L7p:Type variableDataType="string"/>
+                            </L7p:item>
+                            <L7p:item binary="included">
+                                <L7p:CaseSensitive booleanValue="false"/>
+                                <L7p:RightValue stringValue="listProducts"/>
+                            </L7p:item>
+                        </L7p:Predicates>
+                    </L7p:ComparisonAssertion>
+                    <L7p:HardcodedResponse>
+                        <L7p:AssertionComment assertionComment="included">
+                            <L7p:Properties mapValue="included">
+                                <L7p:entry>
+                                    <L7p:key stringValue="LEFT.COMMENT"/>
+                                    <L7p:value stringValue="200"/>
+                                </L7p:entry>
+                            </L7p:Properties>
+                        </L7p:AssertionComment>
+                        <L7p:Base64ResponseBody stringValue="eyAicHJvZHVjdHMiOiBbCiAgICB7ImlkIjogMSwgIm5hbWUiOiAiQUM1NDQiLCAiVGltZSAxMzowMCI6ICJPbiBUaW1lIn0sCiAgICB7ImlkIjogMiwgIm5hbWUiOiAiV0o2MzQ1IiwgIkFycml2YWwgVGltZSAxNDo1NSI6ICJEZWxheWVkIn0sCiAgICB7ImlkIjogMywgIm5hbWUiOiAiQkEyNDkwIiwgIkFycml2YWwgVGltZSAxNDo1NSI6ICJPbiBUaW1lIn0sCiAgICB7ImlkIjogNCwgIm5hbWUiOiAiQUExNDUyIiwgIkFycml2YWwgVGltZSAxNToxNSI6ICJFYXJseSBBcnJpdmFsIn0sCiAgICB7ImlkIjogNSwgIm5hbWUiOiAiV0oyNjc4IiwgIkFycml2YWwgVGltZSAxNjozMiI6ICJEZWxheWVkIn0sCiAgICB7ImlkIjogNiwgIm5hbWUiOiAiQUM0NDU1IiwgIkFycml2YWwgVGltZSAxNzo0NSI6ICJPbiBUaW1lIn0KICBdLAogICJkZXZpY2VfZ2VvIjogIiR7cmVxdWVzdC5odHRwLmhlYWRlci5nZW8tbG9jYXRpb259IiwKICAiY2xpZW50Q2VydC5zdWJqZWN0IjogIiR7cmVxdWVzdC5zc2wuY2xpZW50Q2VydGlmaWNhdGUuc3ViamVjdH0iCn0="/>
+                        <L7p:ResponseContentType stringValue="application/json; charset=utf-8"/>
+                    </L7p:HardcodedResponse>
+                    <L7p:assertionComment>
+                        <L7p:Properties mapValue="included">
+                            <L7p:entry>
+                                <L7p:key stringValue="LEFT.COMMENT"/>
+                                <L7p:value stringValue="List Products"/>
+                            </L7p:entry>
+                        </L7p:Properties>
+                    </L7p:assertionComment>
+                </wsp:All>
+                <L7p:FalseAssertion/>
+                <L7p:assertionComment>
+                    <L7p:Properties mapValue="included">
+                        <L7p:entry>
+                            <L7p:key stringValue="LEFT.COMMENT"/>
+                            <L7p:value stringValue="Find operation"/>
+                        </L7p:entry>
+                    </L7p:Properties>
+                </L7p:assertionComment>
+            </wsp:OneOrMore>
+        </wsp:All>
+    </wsp:Policy>
+</exp:Export>

@@ -1,5 +1,6 @@
 package com.brcm.apim.magtraining;
 
+import android.Manifest;
 import android.app.ActivityManager;
 import android.app.AlertDialog;
 import android.app.KeyguardManager;
@@ -9,7 +10,10 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationManager;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.Process;
+import android.os.SystemClock;
 import android.provider.Settings;
 import android.telephony.TelephonyManager;
 import android.util.Log;
@@ -20,12 +24,16 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
+import com.ca.mas.core.log.MASLoggerConfiguration;
 import com.ca.mas.foundation.MAS;
 import com.ca.mas.foundation.MASCallback;
+import com.ca.mas.foundation.MASConfiguration;
 import com.ca.mas.foundation.MASConstants;
 import com.ca.mas.foundation.MASSessionUnlockCallback;
 import com.ca.mas.foundation.MASUser;
@@ -41,15 +49,12 @@ public class MainActivity extends AppCompatActivity {
     private String mEmulatorLocation = null;
     private Button mLoginButton = null;
     private Button mLogoutButton = null;
-    private TextView mJsonResponseTextView = null;
     private TextView mUserAuthenticatedStatus = null;
     private EditText mUserName = null;
     private EditText mPassword = null;
-
     static final int REQUEST_IMAGE_CAPTURE = 1;
-
     private static final String TAG = MainActivity.class.getSimpleName();
-
+    private static final int REQUEST_CODE_BLUETOOTH_SCAN = 1;
     //
     // Background and Foreground Processing
     //
@@ -130,13 +135,13 @@ public class MainActivity extends AppCompatActivity {
         // Check the App Permissions based on the contents of the Manifest File
         //
 
-        checkAppPermissions();
+        //checkAppPermissions();
 
 
         //
         // Start the MAS SDK
         //
-
+        MASConfiguration.getMASLoggerConfiguration().setLogLevel(MASLoggerConfiguration.MASLogLevel.VERBOSE);
         MAS.start(this, true);
 
         int myMasState = MAS.getState(this);
@@ -236,7 +241,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private int REQUEST_CODE = 0x1000;
+    private final int REQUEST_CODE = 0x1000;
 
     private MASSessionUnlockCallback<Void> getUnlockCallback(final MainActivity activity) {
         return new MASSessionUnlockCallback<Void>() {
@@ -295,7 +300,7 @@ public class MainActivity extends AppCompatActivity {
                             mLoginButton.setVisibility(View.INVISIBLE);
 
                         } catch (Exception e) {
-                            Log.d(TAG, e.getMessage().toString());
+                            Log.d(TAG, e.getMessage());
                             e.printStackTrace();
                         }
                     }
@@ -346,16 +351,16 @@ public class MainActivity extends AppCompatActivity {
                     .getPackageInfo(getApplicationContext().getPackageName(), PackageManager.GET_PERMISSIONS)
                     .requestedPermissions;
             Log.d(TAG, "Got the manifest permissions");
-        } catch (PackageManager.NameNotFoundException e) {
+        } catch (PackageManager.NameNotFoundException ignored) {
         }
 
         boolean permissionsNecessary = false;
-        for (int permissionsCount = 0; permissionsCount < registeredPermissions.length; permissionsCount++) {
-            if (ContextCompat.checkSelfPermission(this, registeredPermissions[permissionsCount]) != PackageManager.PERMISSION_GRANTED) {
+        for (String registeredPermission : registeredPermissions) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S && ContextCompat.checkSelfPermission(this, registeredPermission) != PackageManager.PERMISSION_GRANTED) {
                 // Permission is not granted
                 if (!permissionsNecessary)
                     permissionsNecessary = true;
-                requiredPermissions.add(registeredPermissions[permissionsCount]);
+                requiredPermissions.add(registeredPermission);
             }
         }
         if (permissionsNecessary) {
@@ -370,12 +375,8 @@ public class MainActivity extends AppCompatActivity {
     // Handle the Event if some permissions are not granted
     //
     @Override
-    public void onRequestPermissionsResult(
-            int requestCode,
-            String permissions[],
-            int[] grantResults) {
-
-
+    public void onRequestPermissionsResult(int requestCode, @NonNull String permissions[], @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         String criticalPermission = null;
         for (int currGrant = 0; currGrant < grantResults.length; currGrant++) {
             if (grantResults[currGrant] == PackageManager.PERMISSION_GRANTED) {
@@ -386,7 +387,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
-        if (criticalPermission != null) {
+        /*if (criticalPermission != null) {
 
             final String tempPermission = criticalPermission;
             runOnUiThread(new Runnable() {
@@ -401,22 +402,22 @@ public class MainActivity extends AppCompatActivity {
 
                                     @Override
                                     public void onClick(DialogInterface arg0, int arg1) {
-                                        android.os.SystemClock.sleep(1000);
+                                        SystemClock.sleep(1000);
                                         moveTaskToBack(true);
-                                        android.os.Process.killProcess(android.os.Process.myPid());
+                                        Process.killProcess(Process.myPid());
                                         System.exit(1);
 
                                     }
                                 });
                         alertDialog.show();
                     } catch (Exception e) {
-                        Log.d(TAG, e.getMessage().toString());
+                        Log.d(TAG, e.getMessage());
                         e.printStackTrace();
                     }
 
                 }
             });
-        }
+        }*/
     }
 
     //
@@ -429,6 +430,7 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG, " App has paused");
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     public void onResume() {
         super.onResume();
@@ -453,6 +455,7 @@ public class MainActivity extends AppCompatActivity {
     private void startInActivityTimer() {
         this.mActivityTransitionTimer = new Timer();
         this.mActivityTransitionTimerTask = new TimerTask() {
+            @RequiresApi(api = Build.VERSION_CODES.M)
             public void run() {
                 MASUser currentUser = MASUser.getCurrentUser();
                 if (currentUser != null && !currentUser.isSessionLocked()) {
@@ -476,6 +479,7 @@ public class MainActivity extends AppCompatActivity {
             this.mActivityTransitionTimer.cancel();
         }
     }
+
 
     @Override
     public void onUserInteraction() {
