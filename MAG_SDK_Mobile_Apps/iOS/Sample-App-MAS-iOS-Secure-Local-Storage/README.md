@@ -12,7 +12,7 @@ This sample app uses the MASFoundation, MASStorage and MASUI frameworks of the M
 2. In Terminal type: `pod update`  
    If this fails try: `pod install`
 3. Open the .xcworkspace (ie: StorageApp.xcworkspace).
-4. In the CA OAuth Manager, create an app, and export the msso_config file (https://you_server_name:8443/oauth/manager). For help with this file, see [iOS Guide](http://techdocs.broadcom.com/content/broadcom/techdocs/us/en/ca-enterprise-software/layer7-api-management/mobile-sdk-for-ca-mobile-api-gateway/2-2.html).
+4. In the CA OAuth Manager, create an app, and export the msso_config file (https://you_server_name:8443/oauth/manager). For help with this file, see [iOS Guide](http://techdocs.broadcom.com/content/broadcom/techdocs/us/en/ca-enterprise-software/layer7-api-management/mobile-sdk-for-ca-mobile-api-gateway/2-3.html).
 5. Copy the contents of the exported msso_config into the msso_config file in Xcode workspace.
 6. Open up the class StorageApp/classes/StorageTableViewController.m, and add in your SampleUser and SampleUserPassword from your MAG database.
 7. Build and Deploy the app to a device or simulator.

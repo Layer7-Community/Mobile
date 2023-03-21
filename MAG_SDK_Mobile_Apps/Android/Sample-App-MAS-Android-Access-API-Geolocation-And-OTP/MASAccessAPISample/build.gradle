@@ -7,17 +7,17 @@
  */
 buildscript {
     repositories {
-        jcenter()
+        mavenCentral()
         google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.5.0'
+        classpath 'com.android.tools.build:gradle:3.5.4'
     }
 }
 
 allprojects {
     repositories {
-        jcenter()
+        mavenCentral()
         google()
     }
 }
@@ -25,7 +25,7 @@ allprojects {
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion project.compileSdkVersion.toInteger()
+    compileSdkVersion 33
     buildToolsVersion buildToolsVersion
 
     lintOptions {
@@ -34,37 +34,56 @@ android {
 
     defaultConfig {
         applicationId "com.ca.masaccessapisample"
-        minSdkVersion project.minSdkVersion
-        targetSdkVersion targetSdkVersion
+        minSdkVersion 26
+        targetSdkVersion 33
         versionCode 1
         versionName "1.0"
     }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    packagingOptions {
+        exclude 'META-INF/com.android.tools/proguard/coroutines.pro'
+    }
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     testImplementation 'junit:junit:4.12'
-    implementation 'androidx.appcompat:appcompat:1.0.0'
     implementation 'androidx.multidex:multidex:2.0.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.google.android.material:material:1.1.0'
 
+    implementation 'com.ca.apim:mas-foundation:2.3.00'
+    implementation 'com.ca.apim:mas-storage:2.3.00'
+    implementation 'com.ca.apim:masui:2.3.00'
 
-    //Using JCenter
-    implementation 'com.ca:mas:2.1.00'
-    implementation 'com.ca:masui:2.1.00'
+    implementation "org.bouncycastle:bcpkix-jdk15to18:1.71"
+    implementation "androidx.security:security-crypto:1.0.0"
+
+    implementation 'androidx.gridlayout:gridlayout:1.0.0'// optional: use this if masui module is used
+    implementation "net.zetetic:android-database-sqlcipher:4.5.1@aar"
+    implementation "androidx.sqlite:sqlite:2.2.0"
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'androidx.test.espresso:espresso-idling-resource:3.4.0'
+
 }
 
 repositories {
-    jcenter()
-
+    mavenCentral()
     maven { url 'https://maven.fabric.io/public' }
-
-    maven {
-        url 'https://dl.bintray.com/caapim/maven'
-    }
 }

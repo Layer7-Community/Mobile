@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisableSslPinActivity">
+
+    <TextView
+        android:id="@+id/disable_sslpin_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
+        android:text="@string/ssl_pin_disable" />
+    <Button
+        android:id="@+id/disable_ssl_pin"
+        android:layout_width="240dp"
+        android:layout_height="60dp"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_margin="20dp"
+        android:layout_below="@id/disable_sslpin_text"
+        android:text="@string/connectEndpoint"/>
+
+    <TextView
+        android:id="@+id/success_endpt_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/teal_700"
+        android:layout_below="@id/disable_ssl_pin" />
+
+</RelativeLayout>

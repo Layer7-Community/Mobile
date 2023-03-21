@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EnableSSLPinActivity">
+
+    <TextView
+        android:id="@+id/enable_sslpin_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
+        android:text="@string/ssl_pin_enable" />
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/enable_sslpin_text"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <Switch
+            android:id="@+id/enableSslPinning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:layout_gravity="center_horizontal"
+            android:textOff="OFF"
+            android:textSize="20dp"
+            android:textOn="ON"
+            android:layout_marginTop="10dp"
+            android:text="Enable/Disable"
+            android:switchMinWidth="56dp"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sslPinningStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/sslPinningMethod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sslPinningStatus"
+        android:layout_marginTop="10dp"
+        android:text="(Above status got by Calling isSSLPinningEnabled())"
+        android:gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/enable_ssl_pin"
+        android:layout_width="240dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/sslPinningMethod"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:padding="10dp"
+        android:text="@string/connectEndpoint"
+        android:textSize="20sp" />
+
+    <!--RecyclerView-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:layout_below="@id/enable_ssl_pin"
+        android:background="@color/white" />
+
+</RelativeLayout>

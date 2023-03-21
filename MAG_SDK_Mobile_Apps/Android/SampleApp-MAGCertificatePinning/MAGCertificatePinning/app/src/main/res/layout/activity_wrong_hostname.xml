@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WrongHostname">
+
+    <TextView
+        android:id="@+id/wrong_hostname_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
+        android:text="@string/hostname_verify" />
+
+    <Button
+        android:id="@+id/connect_wrong_hostname"
+        android:layout_width="240dp"
+        android:layout_height="60dp"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_margin="20dp"
+        android:layout_below="@id/wrong_hostname_text"
+        android:text="@string/connectEndpoint"/>
+
+    <TextView
+        android:id="@+id/success_endpt_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/red"
+        android:layout_below="@id/connect_wrong_hostname" />
+
+</RelativeLayout>

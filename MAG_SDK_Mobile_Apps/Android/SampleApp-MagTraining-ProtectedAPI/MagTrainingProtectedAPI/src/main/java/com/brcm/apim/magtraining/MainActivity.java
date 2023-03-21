@@ -1,5 +1,6 @@
 package com.brcm.apim.magtraining;
 
+import android.Manifest;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -9,6 +10,7 @@ import android.graphics.Color;
 import android.location.Location;
 import android.location.LocationManager;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -511,6 +513,12 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if (criticalPermission != null) {
+            if(criticalPermission.equals(Manifest.permission.READ_LOGS)){
+                return;
+            }else if(Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU &&
+                    criticalPermission.equals(Manifest.permission.BLUETOOTH_SCAN)){
+                return;
+            }
 
             final String tempPermission = criticalPermission;
             runOnUiThread( new Runnable() {

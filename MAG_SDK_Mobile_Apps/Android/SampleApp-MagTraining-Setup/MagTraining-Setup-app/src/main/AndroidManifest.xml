@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.brcm.apim.magtraining">
 
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.NFC" />
 
@@ -17,7 +21,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,20 +30,40 @@
             </intent-filter>
         </activity>
 
-        <service
-            android:name="com.ca.mas.core.storage.sharedstorage.MASAuthenticatorService"
-            android:exported="false">
+               <service
+                    android:name="com.ca.mas.core.storage.sharedstorage.MASAuthenticatorService"
+                    android:exported="false">
+                    <intent-filter>
+                        <action android:name="android.accounts.AccountAuthenticator" />
+                    </intent-filter>
+                    <meta-data
+                        android:name="account.name"
+                        android:resource="@string/acc_name" />
+                    <meta-data
+                        android:name="android.accounts.AccountAuthenticator"
+                        android:resource="@xml/authenticator" />
+                </service>
+
+        <activity
+            android:name="net.openid.appauth.RedirectUriReceiverActivity"
+            tools:node="replace"
+            android:exported="true">
             <intent-filter>
-                <action android:name="android.accounts.AccountAuthenticator" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="camsso" />
             </intent-filter>
-            <meta-data
-                android:name="account.name"
-                android:resource="@string/acc_name" />
-            <meta-data
-                android:name="android.accounts.AccountAuthenticator"
-                android:resource="@xml/authenticator" />
-        </service>
+        </activity>
+
+        <activity
+            android:name="com.ca.mas.ui.MASOAuthRedirectActivity"
+            android:theme="@style/AppTheme"
+            tools:replace="android:theme" />
 
     </application>
+
 
 </manifest>

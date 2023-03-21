@@ -1,10 +1,11 @@
 package com.brcm.apim.magtraining;
 
 import androidx.test.espresso.idling.CountingIdlingResource;
+
 /* This class is used for wait until the resource completes the background task/job */
 public class CountingIdlingResourceSingleton {
 
-    private static String RESOURCE = "GLOBAL";
+    private static final String RESOURCE = "GLOBAL";
 
     public static CountingIdlingResource countingIdlingResource = new CountingIdlingResource(RESOURCE);
 

@@ -1,5 +1,6 @@
 package com.brcm.apim.magtraining;
 
+import android.Manifest;
 import android.app.ActivityManager;
 import android.app.AlertDialog;
 import android.app.KeyguardManager;
@@ -9,6 +10,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.telephony.TelephonyManager;
@@ -522,6 +524,14 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if (criticalPermission != null) {
+            if(criticalPermission.equals(Manifest.permission.READ_LOGS)){
+                return;
+            }
+            else if(Build.VERSION.SDK_INT < Build.VERSION_CODES.S && (
+                    criticalPermission.equals(Manifest.permission.BLUETOOTH_SCAN)
+                    || criticalPermission.equals(Manifest.permission.BLUETOOTH_CONNECT))){
+                return;
+            }
 
             final String tempPermission = criticalPermission;
             runOnUiThread( new Runnable() {
